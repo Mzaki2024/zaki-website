@@ -151,7 +151,17 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center">
+          <div className="flex flex-col items-center space-y-8 text-center">
+            {/* Professional Photo */}
+            <div className="relative">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F624a975677594007869932aaba243286?format=webp&width=800"
+                alt="Zaki Mohammed - Georgetown University Awards Ceremony"
+                className="w-64 h-80 md:w-72 md:h-96 object-cover rounded-lg shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+            </div>
+
             <div className="space-y-2">
               <h1
                 className="text-6xl font-bold tracking-tight leading-[60px]"
