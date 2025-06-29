@@ -155,7 +155,7 @@ export default function Index() {
             {/* Professional Photo */}
             <div className="relative">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F624a975677594007869932aaba243286?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa43dd72a9a244a2e83c9998b53926865?format=webp&width=800"
                 alt="Zaki Mohammed - Georgetown University Awards Ceremony"
                 className="w-64 h-80 md:w-72 md:h-96 object-cover rounded-lg shadow-lg"
               />
