@@ -153,10 +153,16 @@ export default function Index() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+              <h1
+                className="text-6xl font-bold tracking-tight leading-[60px]"
+                style={{ fontFamily: "Georgia, serif" }}
+              >
                 Zaki Mohammed
               </h1>
-              <p className="mx-auto max-w-[700px] text-xl text-muted-foreground md:text-2xl">
+              <p
+                className="mx-auto max-w-[700px] text-2xl leading-8 text-muted-foreground"
+                style={{ fontFamily: "Times New Roman, serif" }}
+              >
                 Cybersecurity Engineer & AI Safety Researcher
               </p>
               <p className="mx-auto max-w-[600px] text-muted-foreground">
