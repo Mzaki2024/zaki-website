@@ -113,6 +113,12 @@ export default function Index() {
                   Experience
                 </a>
                 <a
+                  href="#education"
+                  className="transition-colors hover:text-primary"
+                >
+                  Education
+                </a>
+                <a
                   href="#publications"
                   className="transition-colors hover:text-primary"
                 >
@@ -355,11 +361,172 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education" className="py-12 md:py-24 lg:py-32 bg-muted/50">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+              Education
+            </h2>
+          </div>
+
+          <div className="mx-auto max-w-4xl space-y-8 py-12">
+            <Card>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2">
+                      <GraduationCap className="h-5 w-5 text-primary" />
+                      Master's in Cybersecurity & Risk Management
+                    </CardTitle>
+                    <CardDescription>
+                      Georgetown University • Aug 2023 - May 2025 • GPA: 3.9/4.0
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">
+                      Leadership & Activities:
+                    </h4>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li>
+                        • Senator for Cybersecurity Risk Management - Graduate
+                        Student Government
+                      </li>
+                      <li>
+                        • Director for Online Students & Technology - Graduate
+                        Student Government
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Awards & Honors:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline">
+                        Tropaia Spirit of Georgetown Award (2025)
+                      </Badge>
+                      <Badge variant="outline">
+                        Tropaia Outstanding Student Award (2025)
+                      </Badge>
+                      <Badge variant="outline">
+                        Exceptional Master's Student Award (2024)
+                      </Badge>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Coursework:</h4>
+                    <p className="text-muted-foreground">
+                      Information Security, Information Assurance & Risk
+                      Management, Security Architecture & Design, Cyber Threat
+                      Intelligence, Disruptive Technologies & Organizational
+                      Change, Information Security Laws & Regulatory Compliance
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2">
+                      <GraduationCap className="h-5 w-5 text-primary" />
+                      Cybersecurity Accelerator Program
+                    </CardTitle>
+                    <CardDescription>
+                      The Washington Center for Internships and Academic
+                      Seminars • Apr 2025
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Completed an immersive cybersecurity experience in Washington,
+                  D.C., engaging with representatives from CISA, ICANN, U.S.
+                  Department of Defense, United States Cyber Command, FBI,
+                  Amazon Web Services (AWS), The Aspen Institute, and more.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2">
+                      <GraduationCap className="h-5 w-5 text-primary" />
+                      Advanced Computer Network Security Certificate
+                    </CardTitle>
+                    <CardDescription>
+                      University of Colorado • Apr 2023 - Aug 2023 • GPA:
+                      3.8/4.0
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">Coursework:</h4>
+                    <p className="text-muted-foreground">
+                      Design Secure Networked Systems, Cryptography & Crypto
+                      API, Firewall & IDS
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Key Skills:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline">Network Security</Badge>
+                      <Badge variant="outline">Cybersecurity</Badge>
+                      <Badge variant="outline">Cryptography</Badge>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2">
+                      <GraduationCap className="h-5 w-5 text-primary" />
+                      Bachelor of Engineering - Computer Science Engineering
+                    </CardTitle>
+                    <CardDescription>
+                      Visvesvaraya Technological University • Aug 2016 - Aug
+                      2020 • GPA: 3.0/4.0
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">Coursework:</h4>
+                    <p className="text-muted-foreground">
+                      Python Programming, Computer Networks & Network Security,
+                      Application Security, SDLC, Design & Analysis of
+                      Algorithms, Database Management Systems, Data Analytics,
+                      Machine Learning
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Publications & Research */}
-      <section
-        id="publications"
-        className="py-12 md:py-24 lg:py-32 bg-muted/50"
-      >
+      <section id="publications" className="py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
