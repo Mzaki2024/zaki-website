@@ -58,7 +58,7 @@ export default function Index() {
     },
     {
       name: "CompTIA Security+",
-      url: null,
+      url: "https://drive.google.com/file/d/12LaMmVag-fol8V7pEcEg0Phdp09guNge/view",
     },
     {
       name: "CompTIA CySA+",
@@ -550,7 +550,7 @@ export default function Index() {
                       Advanced Computer Network Security Certificate
                     </CardTitle>
                     <CardDescription>
-                      University of Colorado • Apr 2023 - Aug 2023 • GPA:
+                      University of Colorado • Apr 2023 - Aug 2023 �� GPA:
                       3.8/4.0
                     </CardDescription>
                   </div>
