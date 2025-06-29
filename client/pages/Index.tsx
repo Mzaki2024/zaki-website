@@ -65,6 +65,7 @@ export default function Index() {
       description:
         "NLP model to flag cognitive biases in geopolitical disinformation",
       type: "IEEE Research",
+      url: "https://arxiv.org/abs/2503.05516",
     },
     {
       title:
@@ -72,11 +73,13 @@ export default function Index() {
       description:
         "SOC-ready EDR stack for real-time detection in industrial environments",
       type: "Research Project",
+      url: "https://github.com/Mzaki2024/BACnet-Unified-Service",
     },
     {
       title: "Cybersecurity Framework For the Healthcare Industry Using NGFW",
       description: "Framework for protecting multi-nodal hospital networks",
       type: "IEEE Journal",
+      url: "https://ieeexplore.ieee.org/document/9388455",
     },
   ];
 
@@ -565,7 +568,20 @@ export default function Index() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{pub.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {pub.description}
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <a
+                      href={pub.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      View Publication
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
