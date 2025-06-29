@@ -134,9 +134,9 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background matrix-bg">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <nav className="sticky top-0 z-50 w-full cyber-nav">
         <div className="container flex h-14 items-center">
           <div className="mr-4 flex">
             <Shield className="mr-2 h-6 w-6 text-primary" />
@@ -198,26 +198,20 @@ export default function Index() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-8 text-center">
             {/* Professional Photo */}
-            <div className="relative">
+            <div className="relative animate-pulse-glow">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa43dd72a9a244a2e83c9998b53926865?format=webp&width=800"
                 alt="Zaki Mohammed - Georgetown University Awards Ceremony"
-                className="w-64 h-80 md:w-72 md:h-96 object-cover rounded-lg shadow-lg"
+                className="w-64 h-80 md:w-72 md:h-96 object-cover rounded-lg shadow-lg cyber-glow"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-primary/10 rounded-lg"></div>
             </div>
 
             <div className="space-y-2">
-              <h1
-                className="text-6xl font-bold tracking-tight leading-[60px]"
-                style={{ fontFamily: "Georgia, serif" }}
-              >
+              <h1 className="text-6xl font-bold tracking-tight leading-[60px] cyber-text" style={{ fontFamily: 'Georgia, serif' }}>
                 Zaki Mohammed
               </h1>
-              <p
-                className="mx-auto max-w-[700px] text-2xl leading-8 text-muted-foreground"
-                style={{ fontFamily: "Times New Roman, serif" }}
-              >
+              <p className="mx-auto max-w-[700px] text-2xl leading-8 text-primary font-semibold" style={{ fontFamily: 'Times New Roman, serif' }}>
                 Cybersecurity Engineer & AI Safety Researcher
               </p>
               <p className="mx-auto max-w-[600px] text-muted-foreground">
@@ -253,7 +247,7 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section id="about" className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -271,13 +265,10 @@ export default function Index() {
           </div>
 
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-            <Card>
+            <Card className="cyber-card cyber-hover">
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
-                <Shield className="h-10 w-10 text-primary" />
-                <CardTitle>Threat Detection</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
+                <Shield className="h-10 w-10 text-primary animate-pulse-glow" />
                   Advanced threat detection and incident response with 90%
                   accuracy improvement across BACnet devices at Siemens.
                 </p>
@@ -323,7 +314,7 @@ export default function Index() {
           </div>
 
           <div className="mx-auto max-w-4xl space-y-8 py-12">
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -449,27 +440,10 @@ export default function Index() {
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">
-                      Leadership & Activities:
-                    </h4>
+                    <h4 className="font-semibold mb-2">Leadership & Activities:</h4>
                     <ul className="space-y-1 text-muted-foreground">
-                      <li>
-                        •{" "}
-                        <a
-                          href="https://gradgov.georgetown.edu/profiles/zaki-mohammed/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-primary transition-colors"
-                        >
-                          Senator for Cybersecurity Risk Management - Graduate
-                          Student Government{" "}
-                          <ExternalLink className="h-3 w-3 inline" />
-                        </a>
-                      </li>
-                      <li>
-                        • Director for Online Students & Technology - Graduate
-                        Student Government
-                      </li>
+                      <li>• <a href="https://gradgov.georgetown.edu/profiles/zaki-mohammed/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Senator for Cybersecurity Risk Management - Graduate Student Government <ExternalLink className="h-3 w-3 inline" /></a></li>
+                      <li>• Director for Online Students & Technology - Graduate Student Government</li>
                     </ul>
                   </div>
 
@@ -491,25 +465,18 @@ export default function Index() {
                   <div>
                     <h4 className="font-semibold mb-2">Awards & Honors:</h4>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline">
-                        Tropaia Spirit of Georgetown Award (2025)
-                      </Badge>
-                      <Badge variant="outline">
-                        Tropaia Outstanding Student Award (2025)
-                      </Badge>
-                      <Badge variant="outline">
-                        Exceptional Master's Student Award (2024)
-                      </Badge>
+                      <Badge variant="outline">Tropaia Spirit of Georgetown Award (2025)</Badge>
+                      <Badge variant="outline">Tropaia Outstanding Student Award (2025)</Badge>
+                      <Badge variant="outline">Exceptional Master's Student Award (2024)</Badge>
                     </div>
                   </div>
 
                   <div>
                     <h4 className="font-semibold mb-2">Coursework:</h4>
                     <p className="text-muted-foreground">
-                      Information Security, Information Assurance & Risk
-                      Management, Security Architecture & Design, Cyber Threat
-                      Intelligence, Disruptive Technologies & Organizational
-                      Change, Information Security Laws & Regulatory Compliance
+                      Information Security, Information Assurance & Risk Management, Security Architecture & Design,
+                      Cyber Threat Intelligence, Disruptive Technologies & Organizational Change, Information Security
+                      Laws & Regulatory Compliance
                     </p>
                   </div>
                 </div>
@@ -525,18 +492,16 @@ export default function Index() {
                       Cybersecurity Accelerator Program
                     </CardTitle>
                     <CardDescription>
-                      The Washington Center for Internships and Academic
-                      Seminars • Apr 2025
+                      The Washington Center for Internships and Academic Seminars • Apr 2025
                     </CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Completed an immersive cybersecurity experience in Washington,
-                  D.C., engaging with representatives from CISA, ICANN, U.S.
-                  Department of Defense, United States Cyber Command, FBI,
-                  Amazon Web Services (AWS), The Aspen Institute, and more.
+                  Completed an immersive cybersecurity experience in Washington, D.C., engaging with representatives
+                  from CISA, ICANN, U.S. Department of Defense, United States Cyber Command, FBI, Amazon Web Services (AWS),
+                  The Aspen Institute, and more.
                 </p>
               </CardContent>
             </Card>
@@ -550,8 +515,7 @@ export default function Index() {
                       Advanced Computer Network Security Certificate
                     </CardTitle>
                     <CardDescription>
-                      University of Colorado • Apr 2023 - Aug 2023 �� GPA:
-                      3.8/4.0
+                      University of Colorado • Apr 2023 - Aug 2023 • GPA: 3.8/4.0
                     </CardDescription>
                   </div>
                 </div>
@@ -561,8 +525,7 @@ export default function Index() {
                   <div>
                     <h4 className="font-semibold mb-2">Coursework:</h4>
                     <p className="text-muted-foreground">
-                      Design Secure Networked Systems, Cryptography & Crypto
-                      API, Firewall & IDS
+                      Design Secure Networked Systems, Cryptography & Crypto API, Firewall & IDS
                     </p>
                   </div>
                   <div>
@@ -601,8 +564,7 @@ export default function Index() {
                       Bachelor of Engineering - Computer Science Engineering
                     </CardTitle>
                     <CardDescription>
-                      Visvesvaraya Technological University • Aug 2016 - Aug
-                      2020 • GPA: 3.0/4.0
+                      Visvesvaraya Technological University • Aug 2016 - Aug 2020 • GPA: 3.0/4.0
                     </CardDescription>
                   </div>
                 </div>
@@ -612,10 +574,8 @@ export default function Index() {
                   <div>
                     <h4 className="font-semibold mb-2">Coursework:</h4>
                     <p className="text-muted-foreground">
-                      Python Programming, Computer Networks & Network Security,
-                      Application Security, SDLC, Design & Analysis of
-                      Algorithms, Database Management Systems, Data Analytics,
-                      Machine Learning
+                      Python Programming, Computer Networks & Network Security, Application Security, SDLC,
+                      Design & Analysis of Algorithms, Database Management Systems, Data Analytics, Machine Learning
                     </p>
                   </div>
                 </div>
@@ -626,7 +586,10 @@ export default function Index() {
       </section>
 
       {/* Publications & Research */}
-      <section id="publications" className="py-12 md:py-24 lg:py-32">
+      <section
+        id="publications"
+        className="py-12 md:py-24 lg:py-32"
+      >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
@@ -649,9 +612,7 @@ export default function Index() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">
-                    {pub.description}
-                  </p>
+                  <p className="text-muted-foreground mb-4">{pub.description}</p>
                   <Button variant="outline" size="sm" asChild>
                     <a
                       href={pub.url}
