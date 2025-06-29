@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -117,6 +118,18 @@ export default function Index() {
                 >
                   Publications
                 </a>
+                <Link
+                  to="/articles"
+                  className="transition-colors hover:text-primary"
+                >
+                  Articles
+                </Link>
+                <Link
+                  to="/blog"
+                  className="transition-colors hover:text-primary"
+                >
+                  Blog
+                </Link>
                 <a
                   href="#contact"
                   className="transition-colors hover:text-primary"
