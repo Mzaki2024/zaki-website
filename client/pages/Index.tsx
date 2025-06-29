@@ -139,8 +139,8 @@ export default function Index() {
       <nav className="sticky top-0 z-50 w-full cyber-nav">
         <div className="container flex h-14 items-center">
           <div className="mr-4 flex">
-            <Shield className="mr-2 h-6 w-6 text-primary" />
-            <span className="font-bold">Zaki Mohammed</span>
+            <Shield className="mr-2 h-6 w-6 text-primary animate-pulse-glow" />
+            <span className="font-bold cyber-text">Zaki Mohammed</span>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <div className="w-full flex-1 md:w-auto md:flex-none">
@@ -208,10 +208,16 @@ export default function Index() {
             </div>
 
             <div className="space-y-2">
-              <h1 className="text-6xl font-bold tracking-tight leading-[60px] cyber-text" style={{ fontFamily: 'Georgia, serif' }}>
+              <h1
+                className="text-6xl font-bold tracking-tight leading-[60px] cyber-text"
+                style={{ fontFamily: "Georgia, serif" }}
+              >
                 Zaki Mohammed
               </h1>
-              <p className="mx-auto max-w-[700px] text-2xl leading-8 text-primary font-semibold" style={{ fontFamily: 'Times New Roman, serif' }}>
+              <p
+                className="mx-auto max-w-[700px] text-2xl leading-8 text-primary font-semibold"
+                style={{ fontFamily: "Times New Roman, serif" }}
+              >
                 Cybersecurity Engineer & AI Safety Researcher
               </p>
               <p className="mx-auto max-w-[600px] text-muted-foreground">
@@ -222,10 +228,15 @@ export default function Index() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" asChild>
+              <Button size="lg" asChild className="cyber-hover">
                 <a href="#contact">Get In Touch</a>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                className="cyber-hover"
+              >
                 <a href="#publications" className="flex items-center gap-2">
                   <FileText className="h-4 w-4" />
                   View Publications
@@ -247,11 +258,14 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background">
+      <section
+        id="about"
+        className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background"
+      >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
                 About
               </h2>
               <p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -265,7 +279,6 @@ export default function Index() {
           </div>
 
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-            <Card className="cyber-card cyber-hover">
             <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <Shield className="h-10 w-10 text-primary animate-pulse-glow" />
@@ -312,7 +325,7 @@ export default function Index() {
       <section id="experience" className="py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
               Professional Experience
             </h2>
           </div>
@@ -350,7 +363,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -382,7 +395,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -418,16 +431,19 @@ export default function Index() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section
+        id="education"
+        className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background"
+      >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
               Education
             </h2>
           </div>
 
           <div className="mx-auto max-w-4xl space-y-8 py-12">
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -444,16 +460,38 @@ export default function Index() {
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">Leadership & Activities:</h4>
+                    <h4 className="font-semibold mb-2">
+                      Leadership & Activities:
+                    </h4>
                     <ul className="space-y-1 text-muted-foreground">
-                      <li>• <a href="https://gradgov.georgetown.edu/profiles/zaki-mohammed/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Senator for Cybersecurity Risk Management - Graduate Student Government <ExternalLink className="h-3 w-3 inline" /></a></li>
-                      <li>• Director for Online Students & Technology - Graduate Student Government</li>
+                      <li>
+                        •{" "}
+                        <a
+                          href="https://gradgov.georgetown.edu/profiles/zaki-mohammed/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-primary transition-colors"
+                        >
+                          Senator for Cybersecurity Risk Management - Graduate
+                          Student Government{" "}
+                          <ExternalLink className="h-3 w-3 inline" />
+                        </a>
+                      </li>
+                      <li>
+                        • Director for Online Students & Technology - Graduate
+                        Student Government
+                      </li>
                     </ul>
                   </div>
 
                   <div>
                     <h4 className="font-semibold mb-2">Official Documents:</h4>
-                    <Button variant="outline" size="sm" asChild>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="cyber-hover"
+                    >
                       <a
                         href="https://drive.google.com/file/d/1MsXrqSOObYM6orBdBDB5xPE5N5sWVcxk/view"
                         target="_blank"
@@ -469,25 +507,32 @@ export default function Index() {
                   <div>
                     <h4 className="font-semibold mb-2">Awards & Honors:</h4>
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline">Tropaia Spirit of Georgetown Award (2025)</Badge>
-                      <Badge variant="outline">Tropaia Outstanding Student Award (2025)</Badge>
-                      <Badge variant="outline">Exceptional Master's Student Award (2024)</Badge>
+                      <Badge variant="outline">
+                        Tropaia Spirit of Georgetown Award (2025)
+                      </Badge>
+                      <Badge variant="outline">
+                        Tropaia Outstanding Student Award (2025)
+                      </Badge>
+                      <Badge variant="outline">
+                        Exceptional Master's Student Award (2024)
+                      </Badge>
                     </div>
                   </div>
 
                   <div>
                     <h4 className="font-semibold mb-2">Coursework:</h4>
                     <p className="text-muted-foreground">
-                      Information Security, Information Assurance & Risk Management, Security Architecture & Design,
-                      Cyber Threat Intelligence, Disruptive Technologies & Organizational Change, Information Security
-                      Laws & Regulatory Compliance
+                      Information Security, Information Assurance & Risk
+                      Management, Security Architecture & Design, Cyber Threat
+                      Intelligence, Disruptive Technologies & Organizational
+                      Change, Information Security Laws & Regulatory Compliance
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -496,21 +541,23 @@ export default function Index() {
                       Cybersecurity Accelerator Program
                     </CardTitle>
                     <CardDescription>
-                      The Washington Center for Internships and Academic Seminars • Apr 2025
+                      The Washington Center for Internships and Academic
+                      Seminars • Apr 2025
                     </CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Completed an immersive cybersecurity experience in Washington, D.C., engaging with representatives
-                  from CISA, ICANN, U.S. Department of Defense, United States Cyber Command, FBI, Amazon Web Services (AWS),
-                  The Aspen Institute, and more.
+                  Completed an immersive cybersecurity experience in Washington,
+                  D.C., engaging with representatives from CISA, ICANN, U.S.
+                  Department of Defense, United States Cyber Command, FBI,
+                  Amazon Web Services (AWS), The Aspen Institute, and more.
                 </p>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -519,7 +566,8 @@ export default function Index() {
                       Advanced Computer Network Security Certificate
                     </CardTitle>
                     <CardDescription>
-                      University of Colorado • Apr 2023 - Aug 2023 • GPA: 3.8/4.0
+                      University of Colorado • Apr 2023 - Aug 2023 • GPA:
+                      3.8/4.0
                     </CardDescription>
                   </div>
                 </div>
@@ -529,7 +577,8 @@ export default function Index() {
                   <div>
                     <h4 className="font-semibold mb-2">Coursework:</h4>
                     <p className="text-muted-foreground">
-                      Design Secure Networked Systems, Cryptography & Crypto API, Firewall & IDS
+                      Design Secure Networked Systems, Cryptography & Crypto
+                      API, Firewall & IDS
                     </p>
                   </div>
                   <div>
@@ -543,7 +592,12 @@ export default function Index() {
 
                   <div>
                     <h4 className="font-semibold mb-2">Official Documents:</h4>
-                    <Button variant="outline" size="sm" asChild>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="cyber-hover"
+                    >
                       <a
                         href="https://drive.google.com/file/d/1Qs_L0qtBI5pyLRYlS2RwUWcUlEg76-WL/view"
                         target="_blank"
@@ -559,7 +613,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -568,7 +622,8 @@ export default function Index() {
                       Bachelor of Engineering - Computer Science Engineering
                     </CardTitle>
                     <CardDescription>
-                      Visvesvaraya Technological University • Aug 2016 - Aug 2020 • GPA: 3.0/4.0
+                      Visvesvaraya Technological University • Aug 2016 - Aug
+                      2020 • GPA: 3.0/4.0
                     </CardDescription>
                   </div>
                 </div>
@@ -578,8 +633,10 @@ export default function Index() {
                   <div>
                     <h4 className="font-semibold mb-2">Coursework:</h4>
                     <p className="text-muted-foreground">
-                      Python Programming, Computer Networks & Network Security, Application Security, SDLC,
-                      Design & Analysis of Algorithms, Database Management Systems, Data Analytics, Machine Learning
+                      Python Programming, Computer Networks & Network Security,
+                      Application Security, SDLC, Design & Analysis of
+                      Algorithms, Database Management Systems, Data Analytics,
+                      Machine Learning
                     </p>
                   </div>
                 </div>
@@ -590,20 +647,17 @@ export default function Index() {
       </section>
 
       {/* Publications & Research */}
-      <section
-        id="publications"
-        className="py-12 md:py-24 lg:py-32"
-      >
+      <section id="publications" className="py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
               Publications & Research
             </h2>
           </div>
 
           <div className="mx-auto max-w-4xl space-y-6 py-12">
             {publications.map((pub, index) => (
-              <Card key={index}>
+              <Card key={index} className="cyber-card cyber-hover">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="space-y-1">
@@ -616,8 +670,15 @@ export default function Index() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{pub.description}</p>
-                  <Button variant="outline" size="sm" asChild>
+                  <p className="text-muted-foreground mb-4">
+                    {pub.description}
+                  </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="cyber-hover"
+                  >
                     <a
                       href={pub.url}
                       target="_blank"
@@ -636,16 +697,20 @@ export default function Index() {
       </section>
 
       {/* Skills & Certifications */}
-      <section className="py-12 md:py-24 lg:py-32">
+      <section className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="container px-4 md:px-6">
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
-              <h3 className="text-2xl font-bold tracking-tighter mb-6">
+              <h3 className="text-2xl font-bold tracking-tighter mb-6 cyber-text">
                 Technical Skills
               </h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
-                  <Badge key={index} variant="outline" className="text-sm">
+                  <Badge
+                    key={index}
+                    variant="outline"
+                    className="text-sm cyber-hover"
+                  >
                     {skill}
                   </Badge>
                 ))}
@@ -653,7 +718,7 @@ export default function Index() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold tracking-tighter mb-6">
+              <h3 className="text-2xl font-bold tracking-tighter mb-6 cyber-text">
                 Certifications
               </h3>
               <div className="space-y-2">
@@ -682,10 +747,10 @@ export default function Index() {
       </section>
 
       {/* Awards */}
-      <section className="py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section className="py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
               Honors & Awards
             </h2>
           </div>
@@ -693,9 +758,9 @@ export default function Index() {
           <div className="mx-auto max-w-4xl py-12">
             <div className="grid gap-4 md:grid-cols-2">
               {awards.map((award, index) => (
-                <Card key={index}>
+                <Card key={index} className="cyber-card cyber-hover">
                   <CardContent className="flex items-center gap-3 p-6">
-                    <Trophy className="h-6 w-6 text-primary" />
+                    <Trophy className="h-6 w-6 text-primary animate-pulse-glow" />
                     <a
                       href={award.url}
                       target="_blank"
@@ -714,10 +779,13 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 md:py-24 lg:py-32">
+      <section
+        id="contact"
+        className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background"
+      >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
               Get In Touch
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -727,7 +795,7 @@ export default function Index() {
           </div>
 
           <div className="mx-auto max-w-sm space-y-4 py-12">
-            <Button className="w-full" size="lg" asChild>
+            <Button className="w-full cyber-hover" size="lg" asChild>
               <a
                 href="mailto:znm6@georgetown.edu"
                 className="flex items-center gap-2"
@@ -737,7 +805,12 @@ export default function Index() {
               </a>
             </Button>
 
-            <Button variant="outline" className="w-full" size="lg" asChild>
+            <Button
+              variant="outline"
+              className="w-full cyber-hover"
+              size="lg"
+              asChild
+            >
               <a
                 href="https://www.linkedin.com/in/mohammedzaki20/"
                 target="_blank"
@@ -759,10 +832,10 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-6 md:py-0">
+      <footer className="border-t py-6 md:py-0 cyber-nav">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-            <Shield className="h-6 w-6 text-primary" />
+            <Shield className="h-6 w-6 text-primary animate-pulse-glow" />
             <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
               © 2024 Zaki Mohammed. Cybersecurity Engineer & Researcher.
             </p>
