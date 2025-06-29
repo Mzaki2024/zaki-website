@@ -269,15 +269,19 @@ export default function Index() {
             <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <Shield className="h-10 w-10 text-primary animate-pulse-glow" />
+                <CardTitle>Threat Detection</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
                   Advanced threat detection and incident response with 90%
                   accuracy improvement across BACnet devices at Siemens.
                 </p>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
-                <Brain className="h-10 w-10 text-primary" />
+                <Brain className="h-10 w-10 text-primary animate-pulse-glow" />
                 <CardTitle>AI Safety Research</CardTitle>
               </CardHeader>
               <CardContent>
@@ -288,9 +292,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cyber-card cyber-hover">
               <CardHeader>
-                <Search className="h-10 w-10 text-primary" />
+                <Search className="h-10 w-10 text-primary animate-pulse-glow" />
                 <CardTitle>Threat Intelligence</CardTitle>
               </CardHeader>
               <CardContent>
