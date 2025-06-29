@@ -52,11 +52,38 @@ export default function Index() {
   ];
 
   const certifications = [
-    "(ISC)² Certified in Cybersecurity",
-    "CompTIA Security+",
-    "CompTIA CySA+",
-    "AWS Certified Security - Specialty",
-    "CompTIA Security Analytics Professional",
+    {
+      name: "(ISC)² Certified in Cybersecurity",
+      url: "https://drive.google.com/file/d/1ZouA7j7i_q83po-_oTjuJCwm6MSukdXc/view",
+    },
+    {
+      name: "CompTIA Security+",
+      url: null,
+    },
+    {
+      name: "CompTIA CySA+",
+      url: "https://drive.google.com/file/d/1VvcPKlAaGA2_8VbWv6Rd2eY7SxUcOKX7/view",
+    },
+    {
+      name: "AWS Certified Security - Specialty",
+      url: "https://drive.google.com/file/d/10T31--FTOJdTgHn8WCtKq3ck25zo-sFS/view",
+    },
+    {
+      name: "CompTIA Security Analytics Professional",
+      url: "https://drive.google.com/file/d/1eXDVYJYWj3ec3RCTHdTRY5EiXq-CYe2w/view",
+    },
+    {
+      name: "Advanced Cyber Threat Intelligence",
+      url: "https://drive.google.com/file/d/1jMUjvBpcIIcw8JD5pc5rplKIMT2xzJcw/view",
+    },
+    {
+      name: "Operationalizing MITRE ATT&CK",
+      url: "https://drive.google.com/file/d/1qfEfNWrizBawKgxFjaa96FURL2EefSFT/view",
+    },
+    {
+      name: "Qualys VMDR - Vulnerability Management",
+      url: "https://drive.google.com/file/d/12-_9eFJh9JQPxqudTypZF1rNn4-jgwO8/view",
+    },
   ];
 
   const publications = [
@@ -84,11 +111,26 @@ export default function Index() {
   ];
 
   const awards = [
-    "Tropaia Spirit of Georgetown Award (2025)",
-    "Tropaia Outstanding Cybersecurity Student (2025)",
-    "Exceptional Master's Student Award (2024)",
-    "InSc Young Researcher Award - Cybersecurity (2023)",
-    "AICTE Vishwakarma Award - Innovation in Healthcare Cybersecurity (2020)",
+    {
+      name: "Tropaia Spirit of Georgetown Award (2025)",
+      url: "https://drive.google.com/file/d/1drVgUzgbMyrZAEpddMWDKu1o85ercF87/view?usp=sharing",
+    },
+    {
+      name: "Tropaia Outstanding Cybersecurity Student (2025)",
+      url: "https://drive.google.com/file/d/1VDS1DKAHhe8pVHpaVFl4Hy12oK702rjv/view?usp=sharing",
+    },
+    {
+      name: "Exceptional Master's Student Award (2024)",
+      url: "https://drive.google.com/file/d/1jmiAKdbaH91q4K1U1FmAcljrDl33-X1R/view?usp=sharing",
+    },
+    {
+      name: "InSc Young Researcher Award - Cybersecurity (2023)",
+      url: "https://drive.google.com/file/d/1ImEyVYCOpyxxsyl6jR50Xi85RScYdQZK/view?usp=sharing",
+    },
+    {
+      name: "AICTE Vishwakarma Award - Innovation in Healthcare Cybersecurity (2020)",
+      url: "https://drive.google.com/file/d/1K9mbQ3bYKdcUj6U3RQHUPo1KHmno_1qY/view?usp=sharing",
+    },
   ];
 
   return (
@@ -412,14 +454,38 @@ export default function Index() {
                     </h4>
                     <ul className="space-y-1 text-muted-foreground">
                       <li>
-                        • Senator for Cybersecurity Risk Management - Graduate
-                        Student Government
+                        •{" "}
+                        <a
+                          href="https://gradgov.georgetown.edu/profiles/zaki-mohammed/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-primary transition-colors"
+                        >
+                          Senator for Cybersecurity Risk Management - Graduate
+                          Student Government{" "}
+                          <ExternalLink className="h-3 w-3 inline" />
+                        </a>
                       </li>
                       <li>
                         • Director for Online Students & Technology - Graduate
                         Student Government
                       </li>
                     </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Official Documents:</h4>
+                    <Button variant="outline" size="sm" asChild>
+                      <a
+                        href="https://drive.google.com/file/d/1MsXrqSOObYM6orBdBDB5xPE5N5sWVcxk/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        View Official Transcript
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
                   </div>
 
                   <div>
@@ -506,6 +572,21 @@ export default function Index() {
                       <Badge variant="outline">Cybersecurity</Badge>
                       <Badge variant="outline">Cryptography</Badge>
                     </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Official Documents:</h4>
+                    <Button variant="outline" size="sm" asChild>
+                      <a
+                        href="https://drive.google.com/file/d/1Qs_L0qtBI5pyLRYlS2RwUWcUlEg76-WL/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        View Official Transcript
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </CardContent>
@@ -614,7 +695,19 @@ export default function Index() {
                 {certifications.map((cert, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <Award className="h-4 w-4 text-primary" />
-                    <span className="text-muted-foreground">{cert}</span>
+                    {cert.url ? (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+                      >
+                        {cert.name}
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    ) : (
+                      <span className="text-muted-foreground">{cert.name}</span>
+                    )}
                   </div>
                 ))}
               </div>
@@ -638,7 +731,15 @@ export default function Index() {
                 <Card key={index}>
                   <CardContent className="flex items-center gap-3 p-6">
                     <Trophy className="h-6 w-6 text-primary" />
-                    <span className="text-sm font-medium">{award}</span>
+                    <a
+                      href={award.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-2 flex-1"
+                    >
+                      {award.name}
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
                   </CardContent>
                 </Card>
               ))}
