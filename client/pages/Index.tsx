@@ -32,24 +32,32 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const skills = [
-    "Threat Detection",
-    "Incident Response",
-    "Risk Management",
-    "SOC Operations",
-    "MITRE ATT&CK",
-    "Splunk",
-    "Wazuh",
-    "Suricata",
-    "Digital Forensics",
-    "Vulnerability Management",
-    "Python",
-    "PowerShell",
-    "AWS Security",
-    "Industrial Cybersecurity",
-    "AI/ML Security",
-    "Threat Intelligence",
-  ];
+  const skillCategories = {
+    "Security Operations": [
+      { name: "SOC Operations", icon: Server },
+      { name: "Threat Detection", icon: Search },
+      { name: "Incident Response", icon: Users },
+      { name: "Risk Management", icon: FileText },
+    ],
+    "Threat Intelligence": [
+      { name: "MITRE ATT&CK", icon: Network },
+      { name: "Threat Intelligence", icon: Search },
+      { name: "Digital Forensics", icon: FileText },
+      { name: "Vulnerability Management", icon: Shield },
+    ],
+    "Tools & Platforms": [
+      { name: "Splunk", icon: Server },
+      { name: "Wazuh", icon: Shield },
+      { name: "Suricata", icon: Network },
+      { name: "Python", icon: Code },
+      { name: "PowerShell", icon: FileText },
+      { name: "AWS Security", icon: Globe },
+    ],
+    "Specialized Domains": [
+      { name: "Industrial Cybersecurity", icon: Server },
+      { name: "AI/ML Security", icon: Brain },
+    ],
+  };
 
   const certifications = [
     {
@@ -699,48 +707,236 @@ export default function Index() {
       {/* Skills & Certifications */}
       <section className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2">
-            <div>
-              <h3 className="text-2xl font-bold tracking-tighter mb-6 cyber-text">
-                Technical Skills
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
-                  <Badge
-                    key={index}
-                    variant="outline"
-                    className="text-sm cyber-hover"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text mb-4">
+              Technical Arsenal
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Comprehensive expertise across cybersecurity domains, from threat
+              detection to AI safety research
+            </p>
+          </div>
 
-            <div>
-              <h3 className="text-2xl font-bold tracking-tighter mb-6 cyber-text">
-                Certifications
-              </h3>
-              <div className="space-y-2">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <Award className="h-4 w-4 text-primary" />
-                    {cert.url ? (
-                      <a
-                        href={cert.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
-                      >
-                        {cert.name}
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
-                    ) : (
-                      <span className="text-muted-foreground">{cert.name}</span>
-                    )}
-                  </div>
-                ))}
-              </div>
+          {/* Technical Skills Categories */}
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+            {/* Security Operations */}
+            <Card className="cyber-card cyber-hover">
+              <CardHeader>
+                <Shield className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
+                <CardTitle className="text-lg">Security Operations</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-2">
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Server className="h-3 w-3 mr-1" />
+                    SOC Operations
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Search className="h-3 w-3 mr-1" />
+                    Threat Detection
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Users className="h-3 w-3 mr-1" />
+                    Incident Response
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <FileText className="h-3 w-3 mr-1" />
+                    Risk Management
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Threat Intelligence */}
+            <Card className="cyber-card cyber-hover">
+              <CardHeader>
+                <Brain className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
+                <CardTitle className="text-lg">Threat Intelligence</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 gap-2">
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Network className="h-3 w-3 mr-1" />
+                    MITRE ATT&CK
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Search className="h-3 w-3 mr-1" />
+                    Threat Intelligence
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <FileText className="h-3 w-3 mr-1" />
+                    Digital Forensics
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Shield className="h-3 w-3 mr-1" />
+                    Vulnerability Management
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Tools & Platforms */}
+            <Card className="cyber-card cyber-hover">
+              <CardHeader>
+                <Code className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
+                <CardTitle className="text-lg">Tools & Platforms</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-2">
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Server className="h-3 w-3 mr-1" />
+                    Splunk
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Shield className="h-3 w-3 mr-1" />
+                    Wazuh
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Network className="h-3 w-3 mr-1" />
+                    Suricata
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Code className="h-3 w-3 mr-1" />
+                    Python
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <FileText className="h-3 w-3 mr-1" />
+                    PowerShell
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Globe className="h-3 w-3 mr-1" />
+                    AWS Security
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Specialized Domains */}
+            <Card className="cyber-card cyber-hover">
+              <CardHeader>
+                <Globe className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
+                <CardTitle className="text-lg">Specialized Domains</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 gap-2">
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Server className="h-3 w-3 mr-1" />
+                    Industrial Cybersecurity
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="justify-start text-xs cyber-hover"
+                  >
+                    <Brain className="h-3 w-3 mr-1" />
+                    AI/ML Security
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Professional Certifications */}
+          <div>
+            <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
+              Professional Certifications
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {certifications.map((cert, index) => (
+                <Card key={index} className="cyber-card cyber-hover">
+                  <CardContent className="p-4">
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0">
+                        {cert.name.includes("(ISC)²") && (
+                          <Shield className="h-6 w-6 text-primary" />
+                        )}
+                        {cert.name.includes("CompTIA") && (
+                          <Award className="h-6 w-6 text-primary" />
+                        )}
+                        {cert.name.includes("AWS") && (
+                          <Globe className="h-6 w-6 text-primary" />
+                        )}
+                        {cert.name.includes("Threat Intelligence") && (
+                          <Search className="h-6 w-6 text-primary" />
+                        )}
+                        {cert.name.includes("MITRE") && (
+                          <Network className="h-6 w-6 text-primary" />
+                        )}
+                        {cert.name.includes("VMDR") && (
+                          <Server className="h-6 w-6 text-primary" />
+                        )}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        {cert.url ? (
+                          <a
+                            href={cert.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-2 group"
+                          >
+                            <span className="truncate">{cert.name}</span>
+                            <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                          </a>
+                        ) : (
+                          <span className="text-sm font-medium text-muted-foreground">
+                            {cert.name}
+                          </span>
+                        )}
+                        <div className="flex items-center gap-1 mt-1">
+                          <div className="h-1 w-1 rounded-full bg-primary"></div>
+                          <span className="text-xs text-muted-foreground">
+                            Verified
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
