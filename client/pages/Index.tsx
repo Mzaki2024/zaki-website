@@ -272,7 +272,7 @@ export default function Index() {
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  My current focus is on <span className="text-primary font-semibold">protecting operational technologies (OT) environments</span> that are mission critical and often overlooked. My professional background includes leading <span className="text-primary font-semibold">ISO 27001 and PCI DSS initiatives</span>, engineering real-time detection models for industrial environments, and building simulation-based cybersecurity training programs that improve incident response and detection efficiency.
+                  My current focus is on <span className="text-primary">protecting operational technologies (OT) environments</span> that are mission critical and often overlooked. My professional background includes leading <span className="text-primary">ISO 27001 and PCI DSS initiatives</span>, engineering real-time detection models for industrial environments, and building simulation-based cybersecurity training programs that improve incident response and detection efficiency.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
