@@ -112,7 +112,7 @@ export default function Articles() {
       outlet: "Georgetown University News",
       date: "May 2025",
       description: "Profile of award-winning research on AI ethics, international education, and making the world more beautiful through technology.",
-      image: "https://cdn.builder.io/o/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F9d08e80525d041ce9305d7a5e675b32e?alt=media&token=bec16d84-9af7-403d-a371-20cbab93f271&apiKey=5b38fc20b8cd403b91d5d704020852cc",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fe04c66f3b155409395256776d800e18c?format=webp&width=800",
       link: "https://scs.georgetown.edu/news-and-events/article/10023/not-quite-problem-child-spirit-georgetown-winner"
     },
     {
@@ -458,7 +458,7 @@ export default function Articles() {
                           )}
                           <div className="text-sm text-muted-foreground mb-3 flex items-center gap-2">
                             <Calendar className="h-3 w-3" />
-                            {feature.outlet} �� {feature.date}
+                            {feature.outlet} • {feature.date}
                           </div>
                           <p className="text-sm text-muted-foreground leading-relaxed">
                             {feature.description}
