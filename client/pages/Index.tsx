@@ -218,13 +218,11 @@ export default function Index() {
                 className="mx-auto max-w-[700px] text-2xl leading-8 text-primary font-semibold"
                 style={{ fontFamily: "Times New Roman, serif" }}
               >
-                Cybersecurity Engineer & AI Safety Researcher
+                Cybersecurity Professional & OT Security Specialist
               </p>
-              <p className="mx-auto max-w-[600px] text-muted-foreground">
-                4+ years of experience in threat detection, incident response,
-                and risk management. Building secure-by-design systems at the
-                intersection of AI, threat intelligence, and post-quantum
-                resilience.
+              <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
+                Over 5 years of rigorous experience in cybersecurity, threat intelligence, and information assurance.
+                Specializing in protecting operational technologies and mission-critical environments.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
