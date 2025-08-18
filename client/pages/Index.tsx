@@ -1093,6 +1093,108 @@ export default function Index() {
                 </Card>
               ))}
             </div>
+
+            {/* Award Videos Section */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
+                Award Ceremony Videos
+              </h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Spirit of Georgetown Award Video */}
+                <Card className="cyber-card cyber-hover overflow-hidden">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-lg">
+                      <Trophy className="h-5 w-5 text-primary" />
+                      Spirit of Georgetown Award
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="relative group cursor-pointer">
+                      <a
+                        href="https://drive.google.com/file/d/1X8x7noSYrsaHQUbt0L59D02jE41WLm3x/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg flex items-center justify-center relative overflow-hidden cyber-glow">
+                          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                          <div className="z-10 text-center">
+                            <div className="w-16 h-16 rounded-full bg-primary/80 flex items-center justify-center mb-4 mx-auto group-hover:bg-primary transition-colors">
+                              <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                            <p className="text-primary font-semibold">Award Ceremony Video</p>
+                            <p className="text-xs text-muted-foreground mt-1">Click to watch on Google Drive</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">May 2025</span>
+                      <Button variant="outline" size="sm" asChild className="cyber-hover">
+                        <a
+                          href="https://drive.google.com/file/d/1X8x7noSYrsaHQUbt0L59D02jE41WLm3x/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          Watch Video
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Outstanding Student Award Video */}
+                <Card className="cyber-card cyber-hover overflow-hidden">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-lg">
+                      <Trophy className="h-5 w-5 text-primary" />
+                      Outstanding Student Award
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="relative group cursor-pointer">
+                      <a
+                        href="https://drive.google.com/file/d/10vOB0TGAROu4F-AnxNMZ7BFTyT7qWsRc/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block"
+                      >
+                        <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg flex items-center justify-center relative overflow-hidden cyber-glow">
+                          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                          <div className="z-10 text-center">
+                            <div className="w-16 h-16 rounded-full bg-primary/80 flex items-center justify-center mb-4 mx-auto group-hover:bg-primary transition-colors">
+                              <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                            <p className="text-primary font-semibold">Award Ceremony Video</p>
+                            <p className="text-xs text-muted-foreground mt-1">Click to watch on Google Drive</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">May 2025</span>
+                      <Button variant="outline" size="sm" asChild className="cyber-hover">
+                        <a
+                          href="https://drive.google.com/file/d/10vOB0TGAROu4F-AnxNMZ7BFTyT7qWsRc/view?usp=sharing"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          Watch Video
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
