@@ -268,7 +268,7 @@ export default function Index() {
               </h2>
               <div className="mx-auto max-w-4xl space-y-6 text-left">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I'm a <span className="text-primary font-semibold">cybersecurity professional</span> driven by curiosity, precision, and a strong sense of mission. With over <span className="text-primary font-semibold">5 years of rigorous academic and professional experience</span> in cybersecurity, threat intelligence, and information assurance; I've designed, implemented, and validated risk management strategies for enterprises navigating today's complex threat landscape.
+                  I'm a <span className="text-primary">cybersecurity professional</span> driven by curiosity, precision, and a strong sense of mission. With over <span className="text-primary">5 years of rigorous academic and professional experience</span> in cybersecurity, threat intelligence, and information assurance; I've designed, implemented, and validated risk management strategies for enterprises navigating today's complex threat landscape.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
@@ -276,24 +276,24 @@ export default function Index() {
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I've worked at the intersection of technology risk, security operations, and compliance, with hands-on expertise in tools like <span className="text-primary font-semibold">Splunk Enterprise, Nessus, OpenCTI, Wazuh, Suricata</span>, and more. I am deeply curious about developing <span className="text-primary font-semibold">real-time detection models</span>, building automated response frameworks, and automating threat analysis workflows.
+                  I've worked at the intersection of technology risk, security operations, and compliance, with hands-on expertise in tools like <span className="text-primary">Splunk Enterprise, Nessus, OpenCTI, Wazuh, Suricata</span>, and more. I am deeply curious about developing <span className="text-primary">real-time detection models</span>, building automated response frameworks, and automating threat analysis workflows.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I graduated with a <span className="text-primary font-semibold">Bachelor's degree in Computer Science Engineering</span>, where I mastered the foundational skills required to effectively understand and manage cybersecurity risks in different applications. With a <span className="text-primary font-semibold">Master's degree in Cybersecurity Risk Management from Georgetown University</span>, I aim to make tangible impact working in dynamic environments to ensure businesses meet their security objectives.
+                  I graduated with a <span className="text-primary">Bachelor's degree in Computer Science Engineering</span>, where I mastered the foundational skills required to effectively understand and manage cybersecurity risks in different applications. With a <span className="text-primary">Master's degree in Cybersecurity Risk Management from Georgetown University</span>, I aim to make tangible impact working in dynamic environments to ensure businesses meet their security objectives.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  At Georgetown, I served in student leadership committees and actively contribute to building collaborative and resilient security community. I was honored with the <span className="text-primary font-semibold">Tropaia Spirit of Georgetown Award, Tropaia Outstanding Cybersecurity Student Award and Georgetown's Exceptional Master's Student Award</span> over the period of 2 years.
+                  At Georgetown, I served in student leadership committees and actively contribute to building collaborative and resilient security community. I was honored with the <span className="text-primary">Tropaia Spirit of Georgetown Award, Tropaia Outstanding Cybersecurity Student Award and Georgetown's Exceptional Master's Student Award</span> over the period of 2 years.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I hold industry-recognized certifications including <span className="text-primary font-semibold">CompTIA Security+, CySA+, AWS Security Specialty, (ISC)² Certified in Cybersecurity</span>, and more.
+                  I hold industry-recognized certifications including <span className="text-primary">CompTIA Security+, CySA+, AWS Security Specialty, (ISC)² Certified in Cybersecurity</span>, and more.
                 </p>
 
                 <div className="mt-8 p-6 cyber-card rounded-lg border-l-4 border-l-primary">
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    <span className="text-primary font-semibold">I love connecting with great minds across the world</span> to discuss emerging security trends, innovative solutions, and collaborative opportunities. Let's connect!
+                    <span className="text-primary">I love connecting with great minds across the world</span> to discuss emerging security trends, innovative solutions, and collaborative opportunities. Let's connect!
                   </p>
                 </div>
               </div>
