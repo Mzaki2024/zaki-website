@@ -38,7 +38,7 @@ export default function Articles() {
     {
       title: "Industrial Edge Security: Threat-Informed Detection Architecture",
       publication: "Research Publication",
-      year: "2024", 
+      year: "2024",
       description: "SOC-ready EDR stack implementation for real-time threat detection in Dockerized industrial environments. Comprehensive framework for OT security.",
       link: "https://github.com/Mzaki2024/BACnet-Unified-Service",
       type: "Technical Paper",
@@ -52,7 +52,7 @@ export default function Articles() {
       description: "Comprehensive framework for protecting multi-nodal hospital networks through containerization and advanced threat protection mechanisms.",
       link: "https://ieeexplore.ieee.org/document/9388455",
       type: "Peer-Reviewed Research",
-      downloads: "950+", 
+      downloads: "950+",
       citations: "15"
     }
   ];
@@ -67,7 +67,7 @@ export default function Articles() {
     },
     {
       title: "AI-Driven Threat Hunting in Critical Infrastructure",
-      publication: "ACM Computing Surveys", 
+      publication: "ACM Computing Surveys",
       status: "In Preparation",
       expectedDate: "Q3 2025",
       description: "Comprehensive survey of machine learning applications in threat detection for critical infrastructure protection."
@@ -86,7 +86,7 @@ export default function Articles() {
       title: "Building Resilient Security Operations Centers",
       event: "Black Hat USA 2024",
       type: "Technical Session",
-      date: "August 2024", 
+      date: "August 2024",
       location: "Las Vegas, NV"
     },
     {
@@ -100,22 +100,28 @@ export default function Articles() {
 
   const mediaFeatures = [
     {
-      title: "Georgetown Graduate Wins Spirit of Georgetown Award for AI Ethics Research",
-      outlet: "Georgetown University News", 
+      title: "International Student Leads 1,400 Graduates - Class of 2025 Student Marshal",
+      outlet: "Georgetown University Commencement",
       date: "May 2025",
-      description: "Profile of award-winning research on AI ethics and international collaboration."
+      description: "Selected as Student Marshal to lead Georgetown University's 2025 graduation ceremony, representing 1,400 graduates in the School of Continuing Studies.",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa21639887ce44d9499bc98857b845080?format=webp&width=800",
+      link: null
     },
     {
-      title: "Young Cybersecurity Leader Addresses Industrial Security Challenges",
-      outlet: "CSO Magazine",
-      date: "March 2024",
-      description: "Interview on emerging threats in operational technology environments."
+      title: "Georgetown Graduate Wins Spirit of Georgetown Award",
+      outlet: "Georgetown University News",
+      date: "May 2025",
+      description: "Profile of award-winning research on AI ethics, international education, and making the world more beautiful through technology.",
+      image: "https://cdn.builder.io/o/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F9d08e80525d041ce9305d7a5e675b32e?alt=media&token=bec16d84-9af7-403d-a371-20cbab93f271&apiKey=5b38fc20b8cd403b91d5d704020852cc",
+      link: "https://scs.georgetown.edu/news-and-events/article/10023/not-quite-problem-child-spirit-georgetown-winner"
     },
     {
-      title: "The Future of Threat Intelligence: Expert Perspectives",
-      outlet: "Security Week",
-      date: "January 2024",
-      description: "Roundtable discussion on automation and AI in threat intelligence."
+      title: "Young Cybersecurity Leader Wins Outstanding Cybersecurity Student - Class of 2025",
+      outlet: "Georgetown SCS Values",
+      date: "May 2025",
+      description: "Recognition for exceptional academic achievement and leadership in cybersecurity risk management program.",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F972e5bc28f4342d0ae983e00e3003efd?format=webp&width=800",
+      link: "https://scsvalues.georgetown.domains/service-in-action/2025-spirit-of-georgetown-winner-reflects-on-the-ethics-of-artificial-intelligence-the-value-of-international-education-and-the-importance-of-making-the-world-a-beautiful-place/"
     }
   ];
 
@@ -168,7 +174,7 @@ export default function Articles() {
                 Research & Publications
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Academic research, technical publications, and thought leadership in cybersecurity, 
+                Academic research, technical publications, and thought leadership in cybersecurity,
                 AI safety, and operational technology protection.
               </p>
             </div>
@@ -217,7 +223,7 @@ export default function Articles() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 cyber-text">Featured Publication</h2>
-            
+
             <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
@@ -240,7 +246,7 @@ export default function Articles() {
                 <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
                   {featuredArticle.description}
                 </p>
-                
+
                 <div className="flex items-center gap-6 text-sm text-muted-foreground mb-6">
                   <div className="flex items-center gap-2">
                     <Download className="h-4 w-4" />
@@ -255,7 +261,7 @@ export default function Articles() {
                     {featuredArticle.year}
                   </div>
                 </div>
-                
+
                 <Button className="cyber-hover" asChild>
                   <a
                     href={featuredArticle.link}
@@ -278,7 +284,7 @@ export default function Articles() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 cyber-text">Published Research</h2>
-            
+
             <div className="space-y-6">
               {publications.map((pub, index) => (
                 <Card key={index} className="cyber-card cyber-hover">
@@ -302,7 +308,7 @@ export default function Articles() {
                     <p className="text-muted-foreground mb-4 leading-relaxed">
                       {pub.description}
                     </p>
-                    
+
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4 text-sm text-muted-foreground">
                         <div className="flex items-center gap-1">
@@ -314,7 +320,7 @@ export default function Articles() {
                           {pub.citations} citations
                         </div>
                       </div>
-                      
+
                       <Button variant="outline" size="sm" asChild className="cyber-hover">
                         <a
                           href={pub.link}
@@ -340,7 +346,7 @@ export default function Articles() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 cyber-text">Upcoming Publications</h2>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               {upcomingPublications.map((pub, index) => (
                 <Card key={index} className="cyber-card cyber-hover">
@@ -376,7 +382,7 @@ export default function Articles() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 cyber-text">Conference Presentations</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {conferences.map((conf, index) => (
                 <Card key={index} className="cyber-card cyber-hover">
@@ -416,26 +422,52 @@ export default function Articles() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8 cyber-text">Media Features & Press</h2>
-            
-            <div className="space-y-4">
+
+            <div className="space-y-6">
               {mediaFeatures.map((feature, index) => (
-                <Card key={index} className="cyber-card cyber-hover">
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <h3 className="font-semibold mb-1 hover:text-primary transition-colors cursor-pointer">
-                          {feature.title}
-                        </h3>
-                        <div className="text-sm text-muted-foreground mb-2">
-                          {feature.outlet} • {feature.date}
+                <Card key={index} className="cyber-card cyber-hover overflow-hidden">
+                  <div className="md:flex">
+                    {feature.image && (
+                      <div className="md:w-1/3">
+                        <div className="h-48 md:h-full">
+                          <img
+                            src={feature.image}
+                            alt={feature.title}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
-                        <p className="text-sm text-muted-foreground">
-                          {feature.description}
-                        </p>
                       </div>
-                      <Quote className="h-5 w-5 text-primary ml-4" />
+                    )}
+                    <div className={`p-6 ${feature.image ? 'md:w-2/3' : 'w-full'}`}>
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          {feature.link ? (
+                            <a
+                              href={feature.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-semibold mb-2 hover:text-primary transition-colors cursor-pointer block"
+                            >
+                              {feature.title}
+                              <ExternalLink className="h-4 w-4 inline ml-2" />
+                            </a>
+                          ) : (
+                            <h3 className="font-semibold mb-2">
+                              {feature.title}
+                            </h3>
+                          )}
+                          <div className="text-sm text-muted-foreground mb-3 flex items-center gap-2">
+                            <Calendar className="h-3 w-3" />
+                            {feature.outlet} �� {feature.date}
+                          </div>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {feature.description}
+                          </p>
+                        </div>
+                        <Quote className="h-5 w-5 text-primary ml-4 flex-shrink-0" />
+                      </div>
                     </div>
-                  </CardContent>
+                  </div>
                 </Card>
               ))}
             </div>

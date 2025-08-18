@@ -661,6 +661,26 @@ export default function Index() {
                       Machine Learning
                     </p>
                   </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Official Documents:</h4>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="cyber-hover"
+                    >
+                      <a
+                        href="https://drive.google.com/file/d/13Jt0yZ_Sx24c4GmBcXckCVMQ64O5WUzN/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        View Official Transcript
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -815,13 +835,90 @@ export default function Index() {
             <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
               Technology Stack
             </h3>
-            <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4">
-              {['Splunk', 'Wazuh', 'Suricata', 'Python', 'PowerShell', 'AWS', 'Docker', 'Nessus'].map((tool, index) => (
-                <div key={index} className="cyber-card cyber-hover p-4 text-center">
-                  <Server className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <span className="text-xs font-medium">{tool}</span>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-orange-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">Splunk</span>
                 </div>
-              ))}
+                <span className="text-sm font-medium">Splunk</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">Wazuh</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-red-600 rounded-lg flex items-center justify-center">
+                  <Network className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">Suricata</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <Code className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">Python</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-blue-700 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">PS</span>
+                </div>
+                <span className="text-sm font-medium">PowerShell</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-orange-400 rounded-lg flex items-center justify-center">
+                  <Globe className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">AWS</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <Server className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">Docker</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-green-600 rounded-lg flex items-center justify-center">
+                  <Search className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">Nessus</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-purple-600 rounded-lg flex items-center justify-center">
+                  <Brain className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">OpenCTI</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-gray-700 rounded-lg flex items-center justify-center">
+                  <Network className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">Wireshark</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-teal-600 rounded-lg flex items-center justify-center">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">MITRE ATT&CK</span>
+              </Card>
+
+              <Card className="cyber-card cyber-hover p-4 text-center">
+                <div className="h-12 w-12 mx-auto mb-3 bg-indigo-600 rounded-lg flex items-center justify-center">
+                  <FileText className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-sm font-medium">YARA</span>
+              </Card>
             </div>
           </div>
 

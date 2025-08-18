@@ -24,7 +24,7 @@ export default function About() {
     },
     {
       icon: Globe,
-      title: "Global Impact", 
+      title: "Global Impact",
       description: "Working to protect critical infrastructure and create safer digital environments worldwide."
     },
     {
@@ -56,7 +56,7 @@ export default function About() {
       description: "Designed cybersecurity training programs at AntWalk Inc., achieving 90% average satisfaction scores."
     },
     {
-      year: "2020-2022", 
+      year: "2020-2022",
       title: "Threat Intelligence",
       description: "Authored 85+ intelligence reports at Neumetric, specializing in MITRE ATT&CK framework implementation."
     },
@@ -127,16 +127,16 @@ export default function About() {
             </div>
 
             {/* Profile Image & Quick Info */}
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <div className="relative animate-pulse-glow mx-auto md:mx-0">
+            <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+              <div className="relative animate-pulse-glow mx-auto md:mx-0 order-2 md:order-1">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa43dd72a9a244a2e83c9998b53926865?format=webp&width=800"
                   alt="Zaki Mohammed - Georgetown University Awards Ceremony"
                   className="w-80 h-96 object-cover rounded-lg shadow-lg cyber-glow"
                 />
               </div>
-              
-              <div className="space-y-6">
+
+              <div className="space-y-6 order-1 md:order-2">
                 <div>
                   <h2 className="text-2xl font-bold mb-4 cyber-text">Quick Facts</h2>
                   <div className="space-y-3">
@@ -158,7 +158,7 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div>
                   <h3 className="text-lg font-semibold mb-3">Specializations</h3>
                   <div className="flex flex-wrap gap-2">
@@ -180,12 +180,12 @@ export default function About() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 cyber-text">My Journey</h2>
-            
+
             <div className="space-y-8">
               <div className="max-w-4xl mx-auto text-center mb-12">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm a cybersecurity professional driven by <span className="text-primary font-semibold">curiosity, precision, and a strong sense of mission</span>. 
-                  With over 5 years of rigorous academic and professional experience, I've dedicated my career to protecting the systems 
+                  I'm a cybersecurity professional driven by <span className="text-primary font-semibold">curiosity, precision, and a strong sense of mission</span>.
+                  With over 5 years of rigorous academic and professional experience, I've dedicated my career to protecting the systems
                   that power our modern world.
                 </p>
               </div>
@@ -224,7 +224,7 @@ export default function About() {
                 The principles that guide my work and drive my commitment to cybersecurity excellence.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {values.map((value, index) => (
                 <Card key={index} className="cyber-card cyber-hover text-center p-6">
@@ -253,11 +253,11 @@ export default function About() {
                 <Shield className="h-16 w-16 text-primary mx-auto animate-pulse-glow" />
                 <h2 className="text-2xl font-bold cyber-text">Mission Statement</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  My current focus is on <span className="text-primary font-semibold">protecting operational technologies (OT) environments</span> that are mission critical and often overlooked. 
+                  My current focus is on <span className="text-primary font-semibold">protecting operational technologies (OT) environments</span> that are mission critical and often overlooked.
                   I believe in building secure-by-design systems that advance the future of cybersecurity at the intersection of AI, threat intelligence, and post-quantum resilience.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I'm deeply curious about developing <span className="text-primary font-semibold">real-time detection models</span>, building automated response frameworks, 
+                  I'm deeply curious about developing <span className="text-primary font-semibold">real-time detection models</span>, building automated response frameworks,
                   and creating innovative solutions that make the digital world safer for everyone.
                 </p>
               </div>
@@ -271,7 +271,7 @@ export default function About() {
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12 cyber-text">Beyond Cybersecurity</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="cyber-card cyber-hover p-6">
                 <CardHeader>
@@ -284,7 +284,7 @@ export default function About() {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="cyber-card cyber-hover p-6">
                 <CardHeader>
                   <Users className="h-8 w-8 text-primary mb-4" />
@@ -296,7 +296,7 @@ export default function About() {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="cyber-card cyber-hover p-6">
                 <CardHeader>
                   <Heart className="h-8 w-8 text-primary mb-4" />
@@ -320,7 +320,7 @@ export default function About() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold cyber-text">Let's Connect</h2>
               <p className="text-lg text-muted-foreground">
-                I love connecting with great minds across the world to discuss emerging security trends, 
+                I love connecting with great minds across the world to discuss emerging security trends,
                 innovative solutions, and collaborative opportunities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
