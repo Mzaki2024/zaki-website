@@ -221,8 +221,10 @@ export default function Index() {
                 Cybersecurity Professional & OT Security Specialist
               </p>
               <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">
-                Over 5 years of rigorous experience in cybersecurity, threat intelligence, and information assurance.
-                Specializing in protecting operational technologies and mission-critical environments.
+                Over 5 years of rigorous experience in cybersecurity, threat
+                intelligence, and information assurance. Specializing in
+                protecting operational technologies and mission-critical
+                environments.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -268,32 +270,97 @@ export default function Index() {
               </h2>
               <div className="mx-auto max-w-4xl space-y-6 text-left">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I'm a <span className="text-primary">cybersecurity professional</span> driven by curiosity, precision, and a strong sense of mission. With over <span className="text-primary">5 years of rigorous academic and professional experience</span> in cybersecurity, threat intelligence, and information assurance; I've designed, implemented, and validated risk management strategies for enterprises navigating today's complex threat landscape.
+                  I'm a{" "}
+                  <span className="text-primary">
+                    cybersecurity professional
+                  </span>{" "}
+                  driven by curiosity, precision, and a strong sense of mission.
+                  With over{" "}
+                  <span className="text-primary">
+                    5 years of rigorous academic and professional experience
+                  </span>{" "}
+                  in cybersecurity, threat intelligence, and information
+                  assurance; I've designed, implemented, and validated risk
+                  management strategies for enterprises navigating today's
+                  complex threat landscape.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  My current focus is on <span className="text-primary">protecting operational technologies (OT) environments</span> that are mission critical and often overlooked. My professional background includes leading <span className="text-primary">ISO 27001 and PCI DSS initiatives</span>, engineering real-time detection models for industrial environments, and building simulation-based cybersecurity training programs that improve incident response and detection efficiency.
+                  My current focus is on{" "}
+                  <span className="text-primary">
+                    protecting operational technologies (OT) environments
+                  </span>{" "}
+                  that are mission critical and often overlooked. My
+                  professional background includes leading{" "}
+                  <span className="text-primary">
+                    ISO 27001 and PCI DSS initiatives
+                  </span>
+                  , engineering real-time detection models for industrial
+                  environments, and building simulation-based cybersecurity
+                  training programs that improve incident response and detection
+                  efficiency.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I've worked at the intersection of technology risk, security operations, and compliance, with hands-on expertise in tools like <span className="text-primary">Splunk Enterprise, Nessus, OpenCTI, Wazuh, Suricata</span>, and more. I am deeply curious about developing <span className="text-primary">real-time detection models</span>, building automated response frameworks, and automating threat analysis workflows.
+                  I've worked at the intersection of technology risk, security
+                  operations, and compliance, with hands-on expertise in tools
+                  like{" "}
+                  <span className="text-primary">
+                    Splunk Enterprise, Nessus, OpenCTI, Wazuh, Suricata
+                  </span>
+                  , and more. I am deeply curious about developing{" "}
+                  <span className="text-primary">
+                    real-time detection models
+                  </span>
+                  , building automated response frameworks, and automating
+                  threat analysis workflows.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I graduated with a <span className="text-primary">Bachelor's degree in Computer Science Engineering</span>, where I mastered the foundational skills required to effectively understand and manage cybersecurity risks in different applications. With a <span className="text-primary">Master's degree in Cybersecurity Risk Management from Georgetown University</span>, I aim to make tangible impact working in dynamic environments to ensure businesses meet their security objectives.
+                  I graduated with a{" "}
+                  <span className="text-primary">
+                    Bachelor's degree in Computer Science Engineering
+                  </span>
+                  , where I mastered the foundational skills required to
+                  effectively understand and manage cybersecurity risks in
+                  different applications. With a{" "}
+                  <span className="text-primary">
+                    Master's degree in Cybersecurity Risk Management from
+                    Georgetown University
+                  </span>
+                  , I aim to make tangible impact working in dynamic
+                  environments to ensure businesses meet their security
+                  objectives.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  At Georgetown, I served in student leadership committees and actively contribute to building collaborative and resilient security community. I was honored with the <span className="text-primary">Tropaia Spirit of Georgetown Award, Tropaia Outstanding Cybersecurity Student Award and Georgetown's Exceptional Master's Student Award</span> over the period of 2 years.
+                  At Georgetown, I served in student leadership committees and
+                  actively contribute to building collaborative and resilient
+                  security community. I was honored with the{" "}
+                  <span className="text-primary">
+                    Tropaia Spirit of Georgetown Award, Tropaia Outstanding
+                    Cybersecurity Student Award and Georgetown's Exceptional
+                    Master's Student Award
+                  </span>{" "}
+                  over the period of 2 years.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  I hold industry-recognized certifications including <span className="text-primary">CompTIA Security+, CySA+, AWS Security Specialty, (ISC)² Certified in Cybersecurity</span>, and more.
+                  I hold industry-recognized certifications including{" "}
+                  <span className="text-primary">
+                    CompTIA Security+, CySA+, AWS Security Specialty, (ISC)²
+                    Certified in Cybersecurity
+                  </span>
+                  , and more.
                 </p>
 
                 <div className="mt-8 p-6 cyber-card rounded-lg border-l-4 border-l-primary">
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    <span className="text-primary">I love connecting with great minds across the world</span> to discuss emerging security trends, innovative solutions, and collaborative opportunities. Let's connect!
+                    <span className="text-primary">
+                      I love connecting with great minds across the world
+                    </span>{" "}
+                    to discuss emerging security trends, innovative solutions,
+                    and collaborative opportunities. Let's connect!
                   </p>
                 </div>
               </div>
@@ -308,8 +375,9 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Protecting mission-critical operational technologies and industrial environments.
-                  Engineering real-time detection models with 90% accuracy improvement across BACnet devices.
+                  Protecting mission-critical operational technologies and
+                  industrial environments. Engineering real-time detection
+                  models with 90% accuracy improvement across BACnet devices.
                 </p>
               </CardContent>
             </Card>
@@ -321,8 +389,9 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Leading ISO 27001 and PCI DSS initiatives. Designing and implementing risk management
-                  strategies for enterprise threat landscapes.
+                  Leading ISO 27001 and PCI DSS initiatives. Designing and
+                  implementing risk management strategies for enterprise threat
+                  landscapes.
                 </p>
               </CardContent>
             </Card>
@@ -334,8 +403,9 @@ export default function Index() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Building automated response frameworks and threat analysis workflows.
-                  Developing simulation-based training programs that improve incident response efficiency.
+                  Building automated response frameworks and threat analysis
+                  workflows. Developing simulation-based training programs that
+                  improve incident response efficiency.
                 </p>
               </CardContent>
             </Card>
@@ -746,7 +816,8 @@ export default function Index() {
               Skills & Expertise
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Advanced cybersecurity capabilities across multiple domains with industry-recognized certifications
+              Advanced cybersecurity capabilities across multiple domains with
+              industry-recognized certifications
             </p>
           </div>
 
@@ -973,8 +1044,18 @@ export default function Index() {
               Security Frameworks & Standards
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {['NIST CSF', 'ISO 27001', 'PCI DSS', 'SOX 404', 'IEC 62443', 'MITRE ATT&CK'].map((framework, index) => (
-                <div key={index} className="cyber-card cyber-hover p-4 text-center border-l-4 border-l-primary">
+              {[
+                "NIST CSF",
+                "ISO 27001",
+                "PCI DSS",
+                "SOX 404",
+                "IEC 62443",
+                "MITRE ATT&CK",
+              ].map((framework, index) => (
+                <div
+                  key={index}
+                  className="cyber-card cyber-hover p-4 text-center border-l-4 border-l-primary"
+                >
                   <Shield className="h-6 w-6 text-primary mx-auto mb-2" />
                   <span className="text-xs font-medium">{framework}</span>
                 </div>
@@ -1027,8 +1108,9 @@ export default function Index() {
               Let's Connect & Collaborate
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Passionate about emerging security trends, innovative solutions, and collaborative opportunities in cybersecurity?
-              Let's discuss how we can work together to advance the field.
+              Passionate about emerging security trends, innovative solutions,
+              and collaborative opportunities in cybersecurity? Let's discuss
+              how we can work together to advance the field.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mt-4">
               <span>🔹 OT Security</span>

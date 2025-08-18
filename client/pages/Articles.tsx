@@ -8,20 +8,33 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { Shield, ArrowLeft, ExternalLink, BookOpen, Search, Filter, Calendar, Download, Star, Quote } from "lucide-react";
+import {
+  Shield,
+  ArrowLeft,
+  ExternalLink,
+  BookOpen,
+  Search,
+  Filter,
+  Calendar,
+  Download,
+  Star,
+  Quote,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Articles() {
   const featuredArticle = {
-    title: "The Ethics of Artificial Intelligence: Building Trust in Digital Systems",
+    title:
+      "The Ethics of Artificial Intelligence: Building Trust in Digital Systems",
     publication: "Georgetown SCS Values",
     year: "2025",
-    description: "Reflecting on AI ethics, international education, and making the world more beautiful through technology. Featured as 2025 Spirit of Georgetown Award winner.",
+    description:
+      "Reflecting on AI ethics, international education, and making the world more beautiful through technology. Featured as 2025 Spirit of Georgetown Award winner.",
     link: "https://scsvalues.georgetown.domains/service-in-action/2025-spirit-of-georgetown-winner-reflects-on-the-ethics-of-artificial-intelligence-the-value-of-international-education-and-the-importance-of-making-the-world-a-beautiful-place/",
     type: "Feature Article",
     featured: true,
     downloads: "500+",
-    citations: "12"
+    citations: "12",
   };
 
   const publications = [
@@ -29,32 +42,36 @@ export default function Articles() {
       title: "Cognitive Bias Detection in Digital Communications",
       publication: "IEEE Intelligent Systems",
       year: "2024",
-      description: "Research on adversarial NLP and disinformation threat vectors using advanced prompt engineering techniques for detecting cognitive bias in geopolitical communications.",
+      description:
+        "Research on adversarial NLP and disinformation threat vectors using advanced prompt engineering techniques for detecting cognitive bias in geopolitical communications.",
       link: "https://arxiv.org/abs/2503.05516",
       type: "Peer-Reviewed Research",
       downloads: "1.2k+",
-      citations: "8"
+      citations: "8",
     },
     {
       title: "Industrial Edge Security: Threat-Informed Detection Architecture",
       publication: "Research Publication",
       year: "2024",
-      description: "SOC-ready EDR stack implementation for real-time threat detection in Dockerized industrial environments. Comprehensive framework for OT security.",
+      description:
+        "SOC-ready EDR stack implementation for real-time threat detection in Dockerized industrial environments. Comprehensive framework for OT security.",
       link: "https://github.com/Mzaki2024/BACnet-Unified-Service",
       type: "Technical Paper",
       downloads: "800+",
-      citations: "5"
+      citations: "5",
     },
     {
-      title: "Healthcare Cybersecurity Framework Using Next-Generation Firewalls",
+      title:
+        "Healthcare Cybersecurity Framework Using Next-Generation Firewalls",
       publication: "IEEE Journal",
       year: "2023",
-      description: "Comprehensive framework for protecting multi-nodal hospital networks through containerization and advanced threat protection mechanisms.",
+      description:
+        "Comprehensive framework for protecting multi-nodal hospital networks through containerization and advanced threat protection mechanisms.",
       link: "https://ieeexplore.ieee.org/document/9388455",
       type: "Peer-Reviewed Research",
       downloads: "950+",
-      citations: "15"
-    }
+      citations: "15",
+    },
   ];
 
   const upcomingPublications = [
@@ -63,15 +80,17 @@ export default function Articles() {
       publication: "IEEE Security & Privacy Magazine",
       status: "Under Review",
       expectedDate: "Q2 2025",
-      description: "Practical implementation strategies for zero trust principles in operational technology environments."
+      description:
+        "Practical implementation strategies for zero trust principles in operational technology environments.",
     },
     {
       title: "AI-Driven Threat Hunting in Critical Infrastructure",
       publication: "ACM Computing Surveys",
       status: "In Preparation",
       expectedDate: "Q3 2025",
-      description: "Comprehensive survey of machine learning applications in threat detection for critical infrastructure protection."
-    }
+      description:
+        "Comprehensive survey of machine learning applications in threat detection for critical infrastructure protection.",
+    },
   ];
 
   const conferences = [
@@ -80,49 +99,57 @@ export default function Articles() {
       event: "RSA Conference 2024",
       type: "Keynote Speaker",
       date: "May 2024",
-      location: "San Francisco, CA"
+      location: "San Francisco, CA",
     },
     {
       title: "Building Resilient Security Operations Centers",
       event: "Black Hat USA 2024",
       type: "Technical Session",
       date: "August 2024",
-      location: "Las Vegas, NV"
+      location: "Las Vegas, NV",
     },
     {
       title: "Threat Intelligence Automation Workshop",
       event: "SANS Threat Hunting Summit",
       type: "Workshop Leader",
       date: "September 2024",
-      location: "Virtual"
-    }
+      location: "Virtual",
+    },
   ];
 
   const mediaFeatures = [
     {
-      title: "International Student Leads 1,400 Graduates - Class of 2025 Student Marshal",
+      title:
+        "International Student Leads 1,400 Graduates - Class of 2025 Student Marshal",
       outlet: "Georgetown University Commencement",
       date: "May 2025",
-      description: "Selected as Student Marshal to lead Georgetown University's 2025 graduation ceremony, representing 1,400 graduates in the School of Continuing Studies.",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa21639887ce44d9499bc98857b845080?format=webp&width=800",
-      link: null
+      description:
+        "Selected as Student Marshal to lead Georgetown University's 2025 graduation ceremony, representing 1,400 graduates in the School of Continuing Studies.",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa21639887ce44d9499bc98857b845080?format=webp&width=800",
+      link: null,
     },
     {
       title: "Georgetown Graduate Wins Spirit of Georgetown Award",
       outlet: "Georgetown University News",
       date: "May 2025",
-      description: "Profile of award-winning research on AI ethics, international education, and making the world more beautiful through technology.",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fe04c66f3b155409395256776d800e18c?format=webp&width=800",
-      link: "https://scs.georgetown.edu/news-and-events/article/10023/not-quite-problem-child-spirit-georgetown-winner"
+      description:
+        "Profile of award-winning research on AI ethics, international education, and making the world more beautiful through technology.",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fe04c66f3b155409395256776d800e18c?format=webp&width=800",
+      link: "https://scs.georgetown.edu/news-and-events/article/10023/not-quite-problem-child-spirit-georgetown-winner",
     },
     {
-      title: "Young Cybersecurity Leader Wins Outstanding Cybersecurity Student - Class of 2025",
+      title:
+        "Young Cybersecurity Leader Wins Outstanding Cybersecurity Student - Class of 2025",
       outlet: "Georgetown SCS Values",
       date: "May 2025",
-      description: "Recognition for exceptional academic achievement and leadership in cybersecurity risk management program.",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F972e5bc28f4342d0ae983e00e3003efd?format=webp&width=800",
-      link: "https://scsvalues.georgetown.domains/service-in-action/2025-spirit-of-georgetown-winner-reflects-on-the-ethics-of-artificial-intelligence-the-value-of-international-education-and-the-importance-of-making-the-world-a-beautiful-place/"
-    }
+      description:
+        "Recognition for exceptional academic achievement and leadership in cybersecurity risk management program.",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2F972e5bc28f4342d0ae983e00e3003efd?format=webp&width=800",
+      link: "https://scsvalues.georgetown.domains/service-in-action/2025-spirit-of-georgetown-winner-reflects-on-the-ethics-of-artificial-intelligence-the-value-of-international-education-and-the-importance-of-making-the-world-a-beautiful-place/",
+    },
   ];
 
   return (
@@ -132,7 +159,9 @@ export default function Articles() {
         <div className="container flex h-14 items-center">
           <div className="mr-4 flex">
             <Shield className="mr-2 h-6 w-6 text-primary animate-pulse-glow" />
-            <Link to="/" className="font-bold cyber-text">Zaki Mohammed</Link>
+            <Link to="/" className="font-bold cyber-text">
+              Zaki Mohammed
+            </Link>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <div className="w-full flex-1 md:w-auto md:flex-none">
@@ -174,8 +203,9 @@ export default function Articles() {
                 Research & Publications
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Academic research, technical publications, and thought leadership in cybersecurity,
-                AI safety, and operational technology protection.
+                Academic research, technical publications, and thought
+                leadership in cybersecurity, AI safety, and operational
+                technology protection.
               </p>
             </div>
 
@@ -184,7 +214,9 @@ export default function Articles() {
               <Card className="cyber-card p-4 text-center">
                 <BookOpen className="h-6 w-6 text-primary mx-auto mb-2" />
                 <div className="text-2xl font-bold">15+</div>
-                <div className="text-xs text-muted-foreground">Publications</div>
+                <div className="text-xs text-muted-foreground">
+                  Publications
+                </div>
               </Card>
               <Card className="cyber-card p-4 text-center">
                 <Star className="h-6 w-6 text-primary mx-auto mb-2" />
@@ -199,7 +231,9 @@ export default function Articles() {
               <Card className="cyber-card p-4 text-center">
                 <Quote className="h-6 w-6 text-primary mx-auto mb-2" />
                 <div className="text-2xl font-bold">8</div>
-                <div className="text-xs text-muted-foreground">Media Features</div>
+                <div className="text-xs text-muted-foreground">
+                  Media Features
+                </div>
               </Card>
             </div>
 
@@ -207,7 +241,10 @@ export default function Articles() {
             <div className="flex gap-4 max-w-2xl mx-auto mt-8">
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                <Input placeholder="Search publications..." className="pl-10 cyber-card" />
+                <Input
+                  placeholder="Search publications..."
+                  className="pl-10 cyber-card"
+                />
               </div>
               <Button variant="outline" className="cyber-hover">
                 <Filter className="h-4 w-4 mr-2" />
@@ -222,14 +259,18 @@ export default function Articles() {
       <section className="py-16 md:py-20">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 cyber-text">Featured Publication</h2>
+            <h2 className="text-2xl font-bold mb-8 cyber-text">
+              Featured Publication
+            </h2>
 
             <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="space-y-2 flex-1">
                     <div className="flex items-center gap-2">
-                      <Badge className="bg-primary/10 text-primary">Featured</Badge>
+                      <Badge className="bg-primary/10 text-primary">
+                        Featured
+                      </Badge>
                       <Badge variant="secondary">{featuredArticle.type}</Badge>
                     </div>
                     <CardTitle className="text-2xl leading-tight cyber-text">
@@ -283,7 +324,9 @@ export default function Articles() {
       <section className="py-16 md:py-20 bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 cyber-text">Published Research</h2>
+            <h2 className="text-2xl font-bold mb-8 cyber-text">
+              Published Research
+            </h2>
 
             <div className="space-y-6">
               {publications.map((pub, index) => (
@@ -321,7 +364,12 @@ export default function Articles() {
                         </div>
                       </div>
 
-                      <Button variant="outline" size="sm" asChild className="cyber-hover">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="cyber-hover"
+                      >
                         <a
                           href={pub.link}
                           target="_blank"
@@ -345,7 +393,9 @@ export default function Articles() {
       <section className="py-16 md:py-20">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 cyber-text">Upcoming Publications</h2>
+            <h2 className="text-2xl font-bold mb-8 cyber-text">
+              Upcoming Publications
+            </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
               {upcomingPublications.map((pub, index) => (
@@ -381,7 +431,9 @@ export default function Articles() {
       <section className="py-16 md:py-20 bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 cyber-text">Conference Presentations</h2>
+            <h2 className="text-2xl font-bold mb-8 cyber-text">
+              Conference Presentations
+            </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
               {conferences.map((conf, index) => (
@@ -421,11 +473,16 @@ export default function Articles() {
       <section className="py-16 md:py-20">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 cyber-text">Media Features & Press</h2>
+            <h2 className="text-2xl font-bold mb-8 cyber-text">
+              Media Features & Press
+            </h2>
 
             <div className="space-y-6">
               {mediaFeatures.map((feature, index) => (
-                <Card key={index} className="cyber-card cyber-hover overflow-hidden">
+                <Card
+                  key={index}
+                  className="cyber-card cyber-hover overflow-hidden"
+                >
                   <div className="md:flex">
                     {feature.image && (
                       <div className="md:w-1/3">
@@ -438,7 +495,9 @@ export default function Articles() {
                         </div>
                       </div>
                     )}
-                    <div className={`p-6 ${feature.image ? 'md:w-2/3' : 'w-full'}`}>
+                    <div
+                      className={`p-6 ${feature.image ? "md:w-2/3" : "w-full"}`}
+                    >
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           {feature.link ? (
