@@ -132,7 +132,7 @@ export default function About() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F5b38fc20b8cd403b91d5d704020852cc%2Fa43dd72a9a244a2e83c9998b53926865?format=webp&width=800"
                   alt="Zaki Mohammed - Georgetown University Awards Ceremony"
-                  className="w-80 h-96 object-cover rounded-lg shadow-lg cyber-glow"
+                  className="w-[421px] h-96 object-cover rounded-lg shadow-lg cyber-glow pl-0.5"
                 />
               </div>
 
