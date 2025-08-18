@@ -32,32 +32,24 @@ import {
 } from "lucide-react";
 
 export default function Index() {
-  const skillCategories = {
-    "Security Operations": [
-      { name: "SOC Operations", icon: Server },
-      { name: "Threat Detection", icon: Search },
-      { name: "Incident Response", icon: Users },
-      { name: "Risk Management", icon: FileText },
-    ],
-    "Threat Intelligence": [
-      { name: "MITRE ATT&CK", icon: Network },
-      { name: "Threat Intelligence", icon: Search },
-      { name: "Digital Forensics", icon: FileText },
-      { name: "Vulnerability Management", icon: Shield },
-    ],
-    "Tools & Platforms": [
-      { name: "Splunk", icon: Server },
-      { name: "Wazuh", icon: Shield },
-      { name: "Suricata", icon: Network },
-      { name: "Python", icon: Code },
-      { name: "PowerShell", icon: FileText },
-      { name: "AWS Security", icon: Globe },
-    ],
-    "Specialized Domains": [
-      { name: "Industrial Cybersecurity", icon: Server },
-      { name: "AI/ML Security", icon: Brain },
-    ],
-  };
+  const skills = [
+    "Threat Detection",
+    "Incident Response",
+    "Risk Management",
+    "SOC Operations",
+    "MITRE ATT&CK",
+    "Splunk",
+    "Wazuh",
+    "Suricata",
+    "Digital Forensics",
+    "Vulnerability Management",
+    "Python",
+    "PowerShell",
+    "AWS Security",
+    "Industrial Cybersecurity",
+    "AI/ML Security",
+    "Threat Intelligence",
+  ];
 
   const certifications = [
     {
@@ -271,31 +263,68 @@ export default function Index() {
         className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background"
       >
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
+          <div className="flex flex-col items-center justify-center space-y-6 text-center">
+            <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
-                About
+                About Me
               </h2>
-              <p className="mx-auto max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Cybersecurity Engineer with expertise in threat detection,
-                incident response, and AI safety research. Currently pursuing a
-                Master's in Cybersecurity & Risk Management at Georgetown
-                University with a focus on building secure systems that advance
-                the future of cybersecurity.
-              </p>
+              <div className="mx-auto max-w-4xl space-y-6 text-left">
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I'm a <span className="text-primary font-semibold">cybersecurity professional</span> driven by curiosity, precision, and a strong sense of mission. With over <span className="text-primary font-semibold">5 years of rigorous academic and professional experience</span> in cybersecurity, threat intelligence, and information assurance; I've designed, implemented, and validated risk management strategies for enterprises navigating today's complex threat landscape.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  My current focus is on <span className="text-primary font-semibold">protecting operational technologies (OT) environments</span> that are mission critical and often overlooked. My professional background includes leading <span className="text-primary font-semibold">ISO 27001 and PCI DSS initiatives</span>, engineering real-time detection models for industrial environments, and building simulation-based cybersecurity training programs that improve incident response and detection efficiency.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I've worked at the intersection of technology risk, security operations, and compliance, with hands-on expertise in tools like <span className="text-primary font-semibold">Splunk Enterprise, Nessus, OpenCTI, Wazuh, Suricata</span>, and more. I am deeply curious about developing <span className="text-primary font-semibold">real-time detection models</span>, building automated response frameworks, and automating threat analysis workflows.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I graduated with a <span className="text-primary font-semibold">Bachelor's degree in Computer Science Engineering</span>, where I mastered the foundational skills required to effectively understand and manage cybersecurity risks in different applications. With a <span className="text-primary font-semibold">Master's degree in Cybersecurity Risk Management from Georgetown University</span>, I aim to make tangible impact working in dynamic environments to ensure businesses meet their security objectives.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  At Georgetown, I served in student leadership committees and actively contribute to building collaborative and resilient security community. I was honored with the <span className="text-primary font-semibold">Tropaia Spirit of Georgetown Award, Tropaia Outstanding Cybersecurity Student Award and Georgetown's Exceptional Master's Student Award</span> over the period of 2 years.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I hold industry-recognized certifications including <span className="text-primary font-semibold">CompTIA Security+, CySA+, AWS Security Specialty, (ISC)² Certified in Cybersecurity</span>, and more.
+                </p>
+
+                <div className="mt-8 p-6 cyber-card rounded-lg border-l-4 border-l-primary">
+                  <p className="text-lg leading-relaxed text-muted-foreground">
+                    <span className="text-primary font-semibold">I love connecting with great minds across the world</span> to discuss emerging security trends, innovative solutions, and collaborative opportunities. Let's connect!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
             <Card className="cyber-card cyber-hover">
               <CardHeader>
-                <Shield className="h-10 w-10 text-primary animate-pulse-glow" />
-                <CardTitle>Threat Detection</CardTitle>
+                <Server className="h-10 w-10 text-primary animate-pulse-glow" />
+                <CardTitle>OT Security Specialist</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Advanced threat detection and incident response with 90%
-                  accuracy improvement across BACnet devices at Siemens.
+                  Protecting mission-critical operational technologies and industrial environments.
+                  Engineering real-time detection models with 90% accuracy improvement across BACnet devices.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="cyber-card cyber-hover">
+              <CardHeader>
+                <Award className="h-10 w-10 text-primary animate-pulse-glow" />
+                <CardTitle>Compliance & Risk Management</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Leading ISO 27001 and PCI DSS initiatives. Designing and implementing risk management
+                  strategies for enterprise threat landscapes.
                 </p>
               </CardContent>
             </Card>
@@ -303,25 +332,12 @@ export default function Index() {
             <Card className="cyber-card cyber-hover">
               <CardHeader>
                 <Brain className="h-10 w-10 text-primary animate-pulse-glow" />
-                <CardTitle>AI Safety Research</CardTitle>
+                <CardTitle>Automated Detection & Response</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Published research in IEEE on adversarial NLP and cognitive
-                  bias detection in digital communications.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="cyber-card cyber-hover">
-              <CardHeader>
-                <Search className="h-10 w-10 text-primary animate-pulse-glow" />
-                <CardTitle>Threat Intelligence</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Authored 85+ intelligence reports using MITRE ATT&CK
-                  framework, boosting MTTD by 25%.
+                  Building automated response frameworks and threat analysis workflows.
+                  Developing simulation-based training programs that improve incident response efficiency.
                 </p>
               </CardContent>
             </Card>
@@ -709,175 +725,106 @@ export default function Index() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text mb-4">
-              Technical Arsenal
+              Skills & Expertise
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive expertise across cybersecurity domains, from threat
-              detection to AI safety research
+              Advanced cybersecurity capabilities across multiple domains with industry-recognized certifications
             </p>
           </div>
 
-          {/* Technical Skills Categories */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-            {/* Security Operations */}
-            <Card className="cyber-card cyber-hover">
-              <CardHeader>
-                <Shield className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
-                <CardTitle className="text-lg">Security Operations</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-2">
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Server className="h-3 w-3 mr-1" />
-                    SOC Operations
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Search className="h-3 w-3 mr-1" />
-                    Threat Detection
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Users className="h-3 w-3 mr-1" />
-                    Incident Response
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <FileText className="h-3 w-3 mr-1" />
-                    Risk Management
-                  </Badge>
-                </div>
-              </CardContent>
-            </Card>
+          {/* Technical Skills Grid */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
+              Technical Arsenal
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              {/* Threat Detection */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Shield className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Threat Detection</h4>
+              </Card>
 
-            {/* Threat Intelligence */}
-            <Card className="cyber-card cyber-hover">
-              <CardHeader>
-                <Brain className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
-                <CardTitle className="text-lg">Threat Intelligence</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 gap-2">
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Network className="h-3 w-3 mr-1" />
-                    MITRE ATT&CK
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Search className="h-3 w-3 mr-1" />
-                    Threat Intelligence
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <FileText className="h-3 w-3 mr-1" />
-                    Digital Forensics
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Shield className="h-3 w-3 mr-1" />
-                    Vulnerability Management
-                  </Badge>
-                </div>
-              </CardContent>
-            </Card>
+              {/* Incident Response */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Search className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Incident Response</h4>
+              </Card>
 
-            {/* Tools & Platforms */}
-            <Card className="cyber-card cyber-hover">
-              <CardHeader>
-                <Code className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
-                <CardTitle className="text-lg">Tools & Platforms</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-2">
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Server className="h-3 w-3 mr-1" />
-                    Splunk
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Shield className="h-3 w-3 mr-1" />
-                    Wazuh
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Network className="h-3 w-3 mr-1" />
-                    Suricata
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Code className="h-3 w-3 mr-1" />
-                    Python
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <FileText className="h-3 w-3 mr-1" />
-                    PowerShell
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Globe className="h-3 w-3 mr-1" />
-                    AWS Security
-                  </Badge>
-                </div>
-              </CardContent>
-            </Card>
+              {/* SOC Operations */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Server className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">SOC Operations</h4>
+              </Card>
 
-            {/* Specialized Domains */}
-            <Card className="cyber-card cyber-hover">
-              <CardHeader>
-                <Globe className="h-8 w-8 text-primary animate-pulse-glow mb-2" />
-                <CardTitle className="text-lg">Specialized Domains</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 gap-2">
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Server className="h-3 w-3 mr-1" />
-                    Industrial Cybersecurity
-                  </Badge>
-                  <Badge
-                    variant="outline"
-                    className="justify-start text-xs cyber-hover"
-                  >
-                    <Brain className="h-3 w-3 mr-1" />
-                    AI/ML Security
-                  </Badge>
+              {/* Network Security */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Network className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Network Security</h4>
+              </Card>
+
+              {/* AI/ML Security */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Brain className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">AI/ML Security</h4>
+              </Card>
+
+              {/* Programming */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Code className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Programming</h4>
+              </Card>
+
+              {/* Cloud Security */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Globe className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Cloud Security</h4>
+              </Card>
+
+              {/* Risk Management */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Users className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Risk Management</h4>
+              </Card>
+
+              {/* MITRE ATT&CK */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Search className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">MITRE ATT&CK</h4>
+              </Card>
+
+              {/* Digital Forensics */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <FileText className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Digital Forensics</h4>
+              </Card>
+
+              {/* Vulnerability Management */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Shield className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Vuln Management</h4>
+              </Card>
+
+              {/* Threat Intelligence */}
+              <Card className="cyber-card cyber-hover text-center p-6">
+                <Brain className="h-12 w-12 text-primary mx-auto mb-3 animate-pulse-glow" />
+                <h4 className="font-semibold text-sm">Threat Intel</h4>
+              </Card>
+            </div>
+          </div>
+
+          {/* Tools & Technologies */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
+              Technology Stack
+            </h3>
+            <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4">
+              {['Splunk', 'Wazuh', 'Suricata', 'Python', 'PowerShell', 'AWS', 'Docker', 'Nessus'].map((tool, index) => (
+                <div key={index} className="cyber-card cyber-hover p-4 text-center">
+                  <Server className="h-8 w-8 text-primary mx-auto mb-2" />
+                  <span className="text-xs font-medium">{tool}</span>
                 </div>
-              </CardContent>
-            </Card>
+              ))}
+            </div>
           </div>
 
           {/* Professional Certifications */}
@@ -885,57 +832,57 @@ export default function Index() {
             <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
               Professional Certifications
             </h3>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certifications.map((cert, index) => (
-                <Card key={index} className="cyber-card cyber-hover">
-                  <CardContent className="p-4">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-shrink-0">
-                        {cert.name.includes("(ISC)²") && (
-                          <Shield className="h-6 w-6 text-primary" />
-                        )}
-                        {cert.name.includes("CompTIA") && (
-                          <Award className="h-6 w-6 text-primary" />
-                        )}
-                        {cert.name.includes("AWS") && (
-                          <Globe className="h-6 w-6 text-primary" />
-                        )}
-                        {cert.name.includes("Threat Intelligence") && (
-                          <Search className="h-6 w-6 text-primary" />
-                        )}
-                        {cert.name.includes("MITRE") && (
-                          <Network className="h-6 w-6 text-primary" />
-                        )}
-                        {cert.name.includes("VMDR") && (
-                          <Server className="h-6 w-6 text-primary" />
-                        )}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        {cert.url ? (
+                <Card key={index} className="cyber-card cyber-hover p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                      <Award className="h-8 w-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="font-semibold mb-2 text-sm leading-tight">
+                        {cert.name}
+                      </h4>
+                      {cert.url ? (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          asChild
+                          className="cyber-hover h-8 text-xs"
+                        >
                           <a
                             href={cert.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-2 group"
+                            className="flex items-center gap-1"
                           >
-                            <span className="truncate">{cert.name}</span>
-                            <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                            View Certificate
+                            <ExternalLink className="h-3 w-3" />
                           </a>
-                        ) : (
-                          <span className="text-sm font-medium text-muted-foreground">
-                            {cert.name}
-                          </span>
-                        )}
-                        <div className="flex items-center gap-1 mt-1">
-                          <div className="h-1 w-1 rounded-full bg-primary"></div>
-                          <span className="text-xs text-muted-foreground">
-                            Verified
-                          </span>
-                        </div>
-                      </div>
+                        </Button>
+                      ) : (
+                        <Badge variant="secondary" className="text-xs">
+                          Verified
+                        </Badge>
+                      )}
                     </div>
-                  </CardContent>
+                  </div>
                 </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Security Frameworks */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold tracking-tighter mb-8 cyber-text text-center">
+              Security Frameworks & Standards
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {['NIST CSF', 'ISO 27001', 'PCI DSS', 'SOX 404', 'IEC 62443', 'MITRE ATT&CK'].map((framework, index) => (
+                <div key={index} className="cyber-card cyber-hover p-4 text-center border-l-4 border-l-primary">
+                  <Shield className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <span className="text-xs font-medium">{framework}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -982,12 +929,19 @@ export default function Index() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
-              Get In Touch
+              Let's Connect & Collaborate
             </h2>
-            <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Interested in cybersecurity research, threat intelligence, or AI
-              safety? Let's connect.
+            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Passionate about emerging security trends, innovative solutions, and collaborative opportunities in cybersecurity?
+              Let's discuss how we can work together to advance the field.
             </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mt-4">
+              <span>🔹 OT Security</span>
+              <span>🔹 Threat Intelligence</span>
+              <span>🔹 Risk Management</span>
+              <span>🔹 Security Research</span>
+              <span>🔹 AI Safety</span>
+            </div>
           </div>
 
           <div className="mx-auto max-w-sm space-y-4 py-12">
