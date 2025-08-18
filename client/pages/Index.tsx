@@ -145,12 +145,12 @@ export default function Index() {
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <div className="w-full flex-1 md:w-auto md:flex-none">
               <nav className="flex items-center space-x-6 text-sm font-medium">
-                <a
-                  href="#about"
+                <Link
+                  to="/about"
                   className="transition-colors hover:text-primary"
                 >
                   About
-                </a>
+                </Link>
                 <a
                   href="#experience"
                   className="transition-colors hover:text-primary"
@@ -455,7 +455,7 @@ export default function Index() {
       {/* Education Section */}
       <section
         id="education"
-        className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background"
+        className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-background via-muted/30 to-background"
       >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -669,7 +669,7 @@ export default function Index() {
       </section>
 
       {/* Publications & Research */}
-      <section id="publications" className="py-12 md:py-24 lg:py-32">
+      <section id="publications" className="py-16 md:py-20 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
@@ -719,7 +719,7 @@ export default function Index() {
       </section>
 
       {/* Skills & Certifications */}
-      <section className="py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background via-muted/30 to-background">
+      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-background via-muted/30 to-background">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text mb-4">
@@ -888,7 +888,7 @@ export default function Index() {
       </section>
 
       {/* Awards */}
-      <section className="py-12 md:py-24 lg:py-32">
+      <section className="py-16 md:py-20 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
