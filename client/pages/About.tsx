@@ -38,27 +38,27 @@ export default function About() {
     {
       year: "2025",
       title: "Graduation & Recognition",
-      description: "Completing Master's at Georgetown with Tropaia Spirit Award. Focusing on operational technology security."
+      description: "Completed Masters at Georgetown University and won Tropaia Spirit of Georgetown Award & Outstanding Student Award."
     },
     {
       year: "2024",
-      title: "Industrial Security Research",
-      description: "Led threat detection engineering at Siemens Technology, achieving 90% accuracy improvement in BACnet environments."
+      title: "Industrial Cybersecurity & Research",
+      description: "Led threat detection engineering at Siemens Technology, achieving 90% accuracy improvement in BACnet environments.\nResearch Assistant at Initiative on Pedagogical Uses of Artificial Intelligence (IPAI) - Georgetown University"
     },
     {
       year: "2023",
-      title: "Georgetown Leadership",
-      description: "Served as Senator for Cybersecurity Risk Management, launching Georgetown's first cybersecurity society."
+      title: "Georgetown Student Leadership",
+      description: "Served as Senator for Cybersecurity Risk Management, launching Georgetown University Cybersecurity Society (GUCS)"
     },
     {
       year: "2022-2023",
-      title: "Training & Development",
+      title: "Cybersecurity Training & Development",
       description: "Designed cybersecurity training programs at AntWalk Inc., achieving 90% average satisfaction scores."
     },
     {
       year: "2020-2022",
-      title: "Threat Intelligence",
-      description: "Authored 85+ intelligence reports at Neumetric, specializing in MITRE ATT&CK framework implementation."
+      title: "Cyber Threat Intelligence",
+      description: "Authored 85+ intelligence reports, specializing in MITRE ATT&CK framework implementation and threat informed defense"
     },
     {
       year: "2020",
@@ -122,7 +122,7 @@ export default function About() {
                 My Story
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                From curious computer science student to cybersecurity professional protecting critical infrastructure worldwide.
+                From curious computer science student to cybersecurity leader, protecting critical infrastructure worldwide.
               </p>
             </div>
 
@@ -202,7 +202,7 @@ export default function About() {
                         </div>
                         <div className="flex-1">
                           <h3 className="text-xl font-bold mb-2 cyber-text">{item.title}</h3>
-                          <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{item.description}</p>
                         </div>
                       </div>
                     </CardContent>
