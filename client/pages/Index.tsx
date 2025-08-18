@@ -1120,19 +1120,34 @@ export default function Index() {
                           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                           <div className="z-10 text-center">
                             <div className="w-16 h-16 rounded-full bg-primary/80 flex items-center justify-center mb-4 mx-auto group-hover:bg-primary transition-colors">
-                              <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
+                              <svg
+                                className="w-8 h-8 text-white ml-1"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path d="M8 5v14l11-7z" />
                               </svg>
                             </div>
-                            <p className="text-primary font-semibold">Award Ceremony Video</p>
-                            <p className="text-xs text-muted-foreground mt-1">Click to watch on Google Drive</p>
+                            <p className="text-primary font-semibold">
+                              Award Ceremony Video
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              Click to watch on Google Drive
+                            </p>
                           </div>
                         </div>
                       </a>
                     </div>
                     <div className="mt-4 flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">May 2025</span>
-                      <Button variant="outline" size="sm" asChild className="cyber-hover">
+                      <span className="text-sm text-muted-foreground">
+                        May 2025
+                      </span>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="cyber-hover"
+                      >
                         <a
                           href="https://drive.google.com/file/d/1X8x7noSYrsaHQUbt0L59D02jE41WLm3x/view?usp=sharing"
                           target="_blank"
@@ -1167,19 +1182,34 @@ export default function Index() {
                           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                           <div className="z-10 text-center">
                             <div className="w-16 h-16 rounded-full bg-primary/80 flex items-center justify-center mb-4 mx-auto group-hover:bg-primary transition-colors">
-                              <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
+                              <svg
+                                className="w-8 h-8 text-white ml-1"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path d="M8 5v14l11-7z" />
                               </svg>
                             </div>
-                            <p className="text-primary font-semibold">Award Ceremony Video</p>
-                            <p className="text-xs text-muted-foreground mt-1">Click to watch on Google Drive</p>
+                            <p className="text-primary font-semibold">
+                              Award Ceremony Video
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              Click to watch on Google Drive
+                            </p>
                           </div>
                         </div>
                       </a>
                     </div>
                     <div className="mt-4 flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">May 2025</span>
-                      <Button variant="outline" size="sm" asChild className="cyber-hover">
+                      <span className="text-sm text-muted-foreground">
+                        May 2025
+                      </span>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="cyber-hover"
+                      >
                         <a
                           href="https://drive.google.com/file/d/10vOB0TGAROu4F-AnxNMZ7BFTyT7qWsRc/view?usp=sharing"
                           target="_blank"
