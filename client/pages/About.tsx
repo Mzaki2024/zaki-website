@@ -193,11 +193,11 @@ export default function About() {
               <div className="grid gap-8">
                 {timeline.map((item, index) => (
                   <Card key={index} className="cyber-card cyber-hover">
-                    <CardContent className="p-8">
+                  <CardContent className="py-8 pr-8 pl-7">
                       <div className="flex items-start gap-6">
                         <div className="flex-shrink-0">
-                          <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
-                            <span className="text-primary font-bold">{item.year}</span>
+                          <div className={`${item.year === "2022-2023" ? "w-[90px]" : item.year === "2020-2022" ? "w-[86px]" : "w-16"} h-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20`}>
+                            <span className="text-primary font-bold text-sm">{item.year}</span>
                           </div>
                         </div>
                         <div className="flex-1">
