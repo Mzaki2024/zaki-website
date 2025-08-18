@@ -1042,11 +1042,11 @@ export default function Index() {
           <div className="mx-auto max-w-sm space-y-4 py-12">
             <Button className="w-full cyber-hover" size="lg" asChild>
               <a
-                href="mailto:znm6@georgetown.edu"
+                href="mailto:zaki@promaitheon-icsec.com"
                 className="flex items-center gap-2"
               >
                 <Mail className="h-4 w-4" />
-                znm6@georgetown.edu
+                zaki@promaitheon-icsec.com
               </a>
             </Button>
 
