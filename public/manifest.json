@@ -1,0 +1,17 @@
+{
+  "name": "Zaki Mohammed - Cybersecurity Professional",
+  "short_name": "Zaki Mohammed",
+  "description": "Professional portfolio of Zaki Mohammed, Cybersecurity Engineer & OT Security Specialist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0D14",
+  "theme_color": "#00FFE6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
