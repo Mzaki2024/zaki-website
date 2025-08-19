@@ -134,7 +134,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background matrix-bg">
+    <div className="min-h-screen bg-background matrix-bg page-transition">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 w-full cyber-nav">
         <div className="container flex h-14 items-center">
@@ -143,7 +143,7 @@ export default function Index() {
             <span className="font-bold cyber-text">Zaki Mohammed</span>
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-            <div className="w-full flex-1 md:w-auto md:flex-none">
+            <div className="w-full flex-1 md:w-auto md:flex-none hidden sm:block">
               <nav className="flex items-center space-x-6 text-sm font-medium">
                 <Link
                   to="/about"
@@ -194,7 +194,7 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-20 lg:py-24">
+      <section className="relative py-16 md:py-20 lg:py-24 hero-bg section-transition">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-8 text-center">
             {/* Professional Photo */}
@@ -260,7 +260,7 @@ export default function Index() {
       {/* About Section */}
       <section
         id="about"
-        className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-background via-muted/30 to-background"
+        className="py-16 md:py-20 lg:py-24 about-bg section-transition"
       >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-6 text-center">
@@ -368,7 +368,7 @@ export default function Index() {
           </div>
 
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-            <Card className="cyber-card cyber-hover">
+            <Card className="cyber-card cyber-hover card-transition">
               <CardHeader>
                 <Server className="h-10 w-10 text-primary animate-pulse-glow" />
                 <CardTitle>OT Security Specialist</CardTitle>
@@ -414,7 +414,7 @@ export default function Index() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 md:py-20 lg:py-24">
+      <section id="experience" className="py-16 md:py-20 lg:py-24 experience-bg section-transition">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
@@ -525,7 +525,7 @@ export default function Index() {
       {/* Education Section */}
       <section
         id="education"
-        className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-background via-muted/30 to-background"
+        className="py-16 md:py-20 lg:py-24 education-bg section-transition"
       >
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -759,7 +759,7 @@ export default function Index() {
       </section>
 
       {/* Publications & Research */}
-      <section id="publications" className="py-16 md:py-20 lg:py-24">
+      <section id="publications" className="py-16 md:py-20 lg:py-24 publications-bg section-transition">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl cyber-text">
@@ -1290,8 +1290,30 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Mobile Navigation - only visible on mobile */}
+      <nav className="mobile-nav sm:hidden">
+        <div className="mobile-nav-grid">
+          <Link to="/about" className="mobile-nav-item">
+            <Users className="h-4 w-4 mx-auto mb-1" />
+            About
+          </Link>
+          <a href="#experience" className="mobile-nav-item">
+            <Briefcase className="h-4 w-4 mx-auto mb-1" />
+            Work
+          </a>
+          <Link to="/articles" className="mobile-nav-item">
+            <BookOpen className="h-4 w-4 mx-auto mb-1" />
+            Research
+          </Link>
+          <a href="#contact" className="mobile-nav-item">
+            <Mail className="h-4 w-4 mx-auto mb-1" />
+            Contact
+          </a>
+        </div>
+      </nav>
+
       {/* Footer */}
-      <footer className="border-t py-6 md:py-0 cyber-nav">
+      <footer className="border-t py-6 md:py-0 cyber-nav pb-20 sm:pb-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
             <Shield className="h-6 w-6 text-primary animate-pulse-glow" />

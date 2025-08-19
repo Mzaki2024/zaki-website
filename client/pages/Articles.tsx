@@ -153,7 +153,7 @@ export default function Articles() {
   ];
 
   return (
-    <div className="min-h-screen bg-background matrix-bg">
+    <div className="min-h-screen bg-background matrix-bg page-transition">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 w-full cyber-nav">
         <div className="container flex h-14 items-center">
